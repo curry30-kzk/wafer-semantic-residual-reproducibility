@@ -1,0 +1,16 @@
+{
+  "all_passed": true,
+  "standard_library_only": true,
+  "validation_method_task_count": 640,
+  "test_method_task_count": 200,
+  "summary_row_count": 12,
+  "numeric_comparison_count": 2672,
+  "max_absolute_error": 1.6653345369377348e-16,
+  "tolerance": 1e-08,
+  "paired_unit": "ten support-sampling seeds with fixed query set",
+  "historically_unseen_test": false,
+  "multiple_comparisons_corrected": false,
+  "all_inputs_unchanged": true,
+  "freeze_precedes_this_test_evaluation": true,
+  "created_utc": "2026-10-17T05:17:12.370476+00:00"
+}

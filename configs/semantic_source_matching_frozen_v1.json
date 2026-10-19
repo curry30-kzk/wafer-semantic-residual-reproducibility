@@ -1,0 +1,69 @@
+{
+  "schema_version": "semantic_source_matching_frozen_v1",
+  "created_at": "2026-09-22",
+  "purpose": "Fair semantic-source comparison under identical frozen visual caches",
+  "shots": [1, 5, 10],
+  "seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "common_config": {
+    "selection_dataset": "FGVC-Aircraft Validation",
+    "reference_source": "hierarchy_deterministic",
+    "lambda": 0.75,
+    "rho": 0.01,
+    "query_labels_used_for_selection": false
+  },
+  "semantic_bundles": [
+    {
+      "name": "wm811k_llm_structured",
+      "path": "src/wm811k/llm_descriptions.py",
+      "sha256": "5ac193994bc970ace949d99d7d6cd61ae1ae18195eccb1b19469b7fee9eed641",
+      "note": "Frozen structured industrial descriptions; not generated in this reproduction run"
+    },
+    {
+      "name": "wm811k_qwen2_5_7b_instruct",
+      "path": "data/processed/WM811K/semantics/qwen2_5_7b_instruct_v1.json",
+      "sha256": "d3c31c7b1b1cd82e0f253261f317f52a4b603c220e5008e9dbe53a00f5bc2674"
+    },
+    {
+      "name": "fgvc_variant_name",
+      "path": "data/processed/FGVC-Aircraft/semantics/variant_name_v1.json",
+      "sha256": "776542615af22825ac2a694d1b6e5fa7849fba143e9d31d7c69dd6c7b59d06dd"
+    },
+    {
+      "name": "fgvc_hierarchy_deterministic",
+      "path": "data/processed/FGVC-Aircraft/semantics/hierarchy_deterministic_v1.json",
+      "sha256": "4cbf494a3abf88a8ed3950c19b5a716e0e1a33e8aaf3d9419401db86ea1bda9a"
+    },
+    {
+      "name": "fgvc_qwen2_5_7b_instruct_with_fallback",
+      "path": "data/processed/FGVC-Aircraft/semantics/qwen2_5_7b_instruct_v1.json",
+      "sha256": "d68fbd4b24a57c656ddff94f10264b0e91f28b6a072c3c636772e2832a5b8480",
+      "note": "42 accepted Qwen classes plus 58 deterministic hierarchy fallbacks; must not be reported as pure Qwen"
+    }
+  ],
+  "manifest_sets": [
+    {
+      "name": "wm811k_training_support_test_query_10seed",
+      "root": "data/processed/WM811K/splits",
+      "glob": "8way_*shot_seed*.json",
+      "count": 30,
+      "sha256": "ed9878c221a8e7f27d9cddb8b910fae5486f158b7736489774cdeff59093b17b"
+    },
+    {
+      "name": "fgvc_aircraft_training_support_validation_query_10seed",
+      "root": "data/processed/FGVC-Aircraft/splits/validation",
+      "glob": "100way_*shot_seed*.json",
+      "count": 30,
+      "sha256": "6aa18cb755829348f379f6b83abe790a8e079f6ee510df989fa59c57d8714c79"
+    }
+  ],
+  "paths": {
+    "result_root": "results/semantic_source_matching",
+    "artifact_root": "docs/experiments/artifacts/semantic_source_matching"
+  },
+  "execution_boundary": {
+    "requires_qwen_generation": false,
+    "requires_gpu_feature_extraction": false,
+    "requires_existing_raw_caches": true,
+    "large_npz_files_remain_ignored": true
+  }
+}

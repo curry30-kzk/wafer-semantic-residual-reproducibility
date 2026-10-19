@@ -1,0 +1,348 @@
+{
+  "schema_version": "class_reliability_task_result_v1",
+  "protocol": "wm811k_dedup_8way_v2",
+  "shot": 10,
+  "seed": 9,
+  "support_source": "Training",
+  "query_source": "Test",
+  "anchor_mode": "linear_probe",
+  "lambda": 1.0,
+  "rho": 0.01,
+  "granularity": "classwise",
+  "calibration": true,
+  "calibration_method": "support_bias_zscore",
+  "safe_fallback": true,
+  "fusion_mode": "residual",
+  "query_labels_used_for_selection": false,
+  "selection": {
+    "learned_reliability": [
+      0.1513867252170569,
+      0.16800300021915054,
+      0.24830978776186888,
+      0.41252074826595714,
+      0.14450160728538664,
+      0.0,
+      0.7141797035079341,
+      0.0
+    ],
+    "effective_reliability": [
+      0.1513867252170569,
+      0.16800300021915054,
+      0.24830978776186888,
+      0.41252074826595714,
+      0.14450160728538664,
+      0.0,
+      0.7141797035079341,
+      0.0
+    ],
+    "enabled": true,
+    "base_support_macro_f1": 0.6506959789324508,
+    "fused_support_macro_f1": 0.6664903401552008,
+    "loss_start": 0.9658667856538837,
+    "loss_end": 0.92558389305368,
+    "steps": 200,
+    "numerical_fallback": false,
+    "granularity": "classwise",
+    "nonzero_class_fraction": 0.75,
+    "reason": "support_oof_macro_f1_strict_improvement"
+  },
+  "anchor_metrics": {
+    "accuracy": 0.46009627565239425,
+    "macro_f1": 0.46291852609532547,
+    "balanced_accuracy": 0.515883969416409,
+    "per_class": {
+      "Center": {
+        "precision": 0.2082343626286619,
+        "recall": 0.3161057692307692,
+        "f1": 0.2510739856801909,
+        "support": 832
+      },
+      "Donut": {
+        "precision": 0.2608695652173913,
+        "recall": 0.410958904109589,
+        "f1": 0.3191489361702128,
+        "support": 146
+      },
+      "Edge-Loc": {
+        "precision": 0.5223880597014925,
+        "recall": 0.5934343434343434,
+        "f1": 0.555649383550076,
+        "support": 2772
+      },
+      "Edge-Ring": {
+        "precision": 0.5344827586206896,
+        "recall": 0.5781527531083481,
+        "f1": 0.5554607508532423,
+        "support": 1126
+      },
+      "Loc": {
+        "precision": 0.5094527363184079,
+        "recall": 0.25950329447541814,
+        "f1": 0.34385493619879115,
+        "support": 1973
+      },
+      "Random": {
+        "precision": 0.402,
+        "recall": 0.7821011673151751,
+        "f1": 0.5310435931307794,
+        "support": 257
+      },
+      "Scratch": {
+        "precision": 0.5384615384615384,
+        "recall": 0.31313131313131315,
+        "f1": 0.395985401459854,
+        "support": 693
+      },
+      "Near-full": {
+        "precision": 0.6587301587301587,
+        "recall": 0.8736842105263158,
+        "f1": 0.751131221719457,
+        "support": 95
+      }
+    },
+    "confusion_matrix": [
+      [
+        263,
+        46,
+        229,
+        64,
+        187,
+        22,
+        19,
+        2
+      ],
+      [
+        11,
+        60,
+        13,
+        1,
+        23,
+        31,
+        7,
+        0
+      ],
+      [
+        346,
+        32,
+        1645,
+        387,
+        165,
+        127,
+        53,
+        17
+      ],
+      [
+        90,
+        5,
+        301,
+        651,
+        35,
+        35,
+        9,
+        0
+      ],
+      [
+        398,
+        70,
+        749,
+        66,
+        512,
+        73,
+        97,
+        8
+      ],
+      [
+        6,
+        14,
+        5,
+        0,
+        14,
+        201,
+        1,
+        16
+      ],
+      [
+        149,
+        1,
+        204,
+        49,
+        69,
+        4,
+        217,
+        0
+      ],
+      [
+        0,
+        2,
+        3,
+        0,
+        0,
+        7,
+        0,
+        83
+      ]
+    ]
+  },
+  "metrics": {
+    "accuracy": 0.45768938434253864,
+    "macro_f1": 0.4756261834379834,
+    "balanced_accuracy": 0.525237255492212,
+    "per_class": {
+      "Center": {
+        "precision": 0.24741379310344827,
+        "recall": 0.3449519230769231,
+        "f1": 0.28815261044176704,
+        "support": 832
+      },
+      "Donut": {
+        "precision": 0.2727272727272727,
+        "recall": 0.3493150684931507,
+        "f1": 0.3063063063063063,
+        "support": 146
+      },
+      "Edge-Loc": {
+        "precision": 0.5557281553398058,
+        "recall": 0.5162337662337663,
+        "f1": 0.5352534131288573,
+        "support": 2772
+      },
+      "Edge-Ring": {
+        "precision": 0.4952520087655223,
+        "recall": 0.6021314387211367,
+        "f1": 0.5434869739478958,
+        "support": 1126
+      },
+      "Loc": {
+        "precision": 0.49864986498649866,
+        "recall": 0.2807906741003548,
+        "f1": 0.35927367055771725,
+        "support": 1973
+      },
+      "Random": {
+        "precision": 0.4672897196261682,
+        "recall": 0.7782101167315175,
+        "f1": 0.583941605839416,
+        "support": 257
+      },
+      "Scratch": {
+        "precision": 0.3473242392444911,
+        "recall": 0.47763347763347763,
+        "f1": 0.402187120291616,
+        "support": 693
+      },
+      "Near-full": {
+        "precision": 0.7297297297297297,
+        "recall": 0.8526315789473684,
+        "f1": 0.7864077669902912,
+        "support": 95
+      }
+    },
+    "confusion_matrix": [
+      [
+        287,
+        37,
+        139,
+        63,
+        199,
+        17,
+        90,
+        0
+      ],
+      [
+        13,
+        51,
+        7,
+        1,
+        30,
+        26,
+        18,
+        0
+      ],
+      [
+        302,
+        34,
+        1431,
+        481,
+        200,
+        99,
+        216,
+        9
+      ],
+      [
+        98,
+        4,
+        232,
+        678,
+        60,
+        25,
+        29,
+        0
+      ],
+      [
+        345,
+        46,
+        622,
+        85,
+        554,
+        51,
+        264,
+        6
+      ],
+      [
+        6,
+        10,
+        5,
+        2,
+        14,
+        200,
+        5,
+        15
+      ],
+      [
+        109,
+        2,
+        135,
+        59,
+        54,
+        3,
+        331,
+        0
+      ],
+      [
+        0,
+        3,
+        4,
+        0,
+        0,
+        7,
+        0,
+        81
+      ]
+    ]
+  },
+  "training_steps": 200,
+  "trainable_parameters": 8,
+  "dataset": "wm",
+  "method": "ours",
+  "config": {
+    "lambda_value": 1.0,
+    "rho": 0.01
+  },
+  "elapsed_seconds": 0.1576500999799464,
+  "historically_unseen_test": false,
+  "posthoc_analysis": true,
+  "freeze_receipt_sha256": "0a221195699edf51af838ca34c3c6c715880bcdd5b3f6ef85a46c3a99807a218",
+  "score_sha256": "b4bba3f1f5e0482481e7d9556f698d8ce809bbc48958935e2ff17456dc43040a",
+  "text_sha256": "1e7aaf03cf0880436807e0891d0c368de27a7686673a76cdd8f87cd7d73d3e12",
+  "class_names": [
+    "Center",
+    "Donut",
+    "Edge-Loc",
+    "Edge-Ring",
+    "Loc",
+    "Random",
+    "Scratch",
+    "Near-full"
+  ],
+  "created_utc": "2026-10-16T01:42:15.283666+00:00"
+}

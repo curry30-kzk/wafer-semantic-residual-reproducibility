@@ -1,0 +1,7 @@
+{
+  "v9_classwise_validation_records_reproduced": 320,
+  "metrics_compared": 960,
+  "max_metric_error": 0.0,
+  "activation_matches": true,
+  "historically_unseen_test": false
+}

@@ -1,0 +1,10 @@
+{
+  "all_passed": true,
+  "checks_count": 222,
+  "input_record_count": 870,
+  "summary_cell_count": 114,
+  "source_audit": {
+    "status": "not_requested",
+    "note": "Original files are optional for standalone count-level reproduction."
+  }
+}

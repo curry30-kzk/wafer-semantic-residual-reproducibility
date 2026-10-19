@@ -1,0 +1,7 @@
+stage,dataset,method,candidate_count,support_tasks,method_task_fits,optimizer_steps,elapsed_seconds,learned_adaptation_parameters_per_task,label_access,prior_cached_visual_anchor_fit_cost_included,prior_cached_feature_extraction_cost_included
+Validation,fgvc,clap,16,20,320,288000,894.0733358999714,51200,"same 3333-image Validation set, 20 support tasks x 16 candidates",False,False
+Validation,fgvc,ours,16,20,320,64000,88.77480089996243,100,"same 3333-image Validation set, 20 support tasks x 16 candidates",False,False
+Test,wm,clap,1,20,20,6000,24.70752000011271,4096,Test metrics evaluated after this freeze; earlier read-only Test label identity checks disclosed; no Test metrics used for candidate selection,False,False
+Test,wm,ours,1,20,20,4000,3.317968299903441,8,Test metrics evaluated after this freeze; earlier read-only Test label identity checks disclosed; no Test metrics used for candidate selection,False,False
+Test,fgvc,clap,1,20,20,12000,40.24350779989618,51200,Test metrics evaluated after this freeze; earlier read-only Test label identity checks disclosed; no Test metrics used for candidate selection,False,False
+Test,fgvc,ours,1,20,20,4000,9.322332599927904,100,Test metrics evaluated after this freeze; earlier read-only Test label identity checks disclosed; no Test metrics used for candidate selection,False,False

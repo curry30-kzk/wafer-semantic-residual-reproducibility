@@ -1,0 +1,207 @@
+{
+  "training": {
+    "strategy": "fixed_support_only_training_budget",
+    "reason": null,
+    "mode": "clap",
+    "epoch": 300,
+    "optimizer": "SGD",
+    "learning_rate": 0.1,
+    "momentum": 0.9,
+    "weight_decay": 0.0,
+    "learning_rate_scheduler": "one_epoch_constant_warmup_then_cosine",
+    "warmup_epochs": 1,
+    "warmup_learning_rate": 1e-05,
+    "first_epoch_learning_rate": 1e-05,
+    "final_epoch_learning_rate": 2.7599002258127394e-06,
+    "batch_size": 256,
+    "batches_per_epoch": 1,
+    "optimizer_steps": 300,
+    "support_augmentation_view_count": 10,
+    "support_observations_per_epoch": 256,
+    "initialization": "zero_shot_text_prototypes",
+    "constraint": "class_confidence_weighted_l2",
+    "class_coefficients": [
+      0.17196238040924072,
+      0.14282508194446564,
+      0.1248452439904213,
+      0.09575526416301727,
+      0.15152814984321594,
+      0.1634918749332428,
+      0.11027244478464127,
+      0.0493200421333313
+    ],
+    "logit_scale": 100.0,
+    "training_seed": 20262017,
+    "support_training_accuracy": 0.925,
+    "final_support_loss": 1.3154666423797607,
+    "query_labels_used_for_selection": false,
+    "paper_title": "A Closer Look at the Few-Shot Adaptation of Large Vision-Language Models",
+    "reference_repository": "https://github.com/jusiro/CLAP",
+    "reference_commit": "dbdf4095b3d824546474c725539b9f4efff3ca0e",
+    "protocol_note": "The public main configuration's fixed support-derived class coefficients are retained. This project uses its established ten support views instead of the public implementation's twenty."
+  },
+  "train_seconds": 0.91785689999233,
+  "trainable_parameters": 4096,
+  "dataset": "wm",
+  "method": "clap",
+  "shot": 10,
+  "seed": 2,
+  "metrics": {
+    "accuracy": 0.42386622751456804,
+    "macro_f1": 0.41844098327631973,
+    "balanced_accuracy": 0.4397344266248465,
+    "per_class": {
+      "Center": {
+        "precision": 0.32073643410852715,
+        "recall": 0.39783653846153844,
+        "f1": 0.3551502145922747,
+        "support": 832
+      },
+      "Donut": {
+        "precision": 0.22627737226277372,
+        "recall": 0.21232876712328766,
+        "f1": 0.21908127208480566,
+        "support": 146
+      },
+      "Edge-Loc": {
+        "precision": 0.455067920585162,
+        "recall": 0.6284271284271284,
+        "f1": 0.5278787878787878,
+        "support": 2772
+      },
+      "Edge-Ring": {
+        "precision": 0.40950384346610763,
+        "recall": 0.5204262877442274,
+        "f1": 0.4583496284708643,
+        "support": 1126
+      },
+      "Loc": {
+        "precision": 0.40555555555555556,
+        "recall": 0.07399898631525595,
+        "f1": 0.1251607372481783,
+        "support": 1973
+      },
+      "Random": {
+        "precision": 0.673469387755102,
+        "recall": 0.642023346303502,
+        "f1": 0.6573705179282868,
+        "support": 257
+      },
+      "Scratch": {
+        "precision": 0.375,
+        "recall": 0.41125541125541126,
+        "f1": 0.3922918100481762,
+        "support": 693
+      },
+      "Near-full": {
+        "precision": 0.594059405940594,
+        "recall": 0.631578947368421,
+        "f1": 0.6122448979591837,
+        "support": 95
+      }
+    },
+    "confusion_matrix": [
+      [
+        331,
+        35,
+        190,
+        156,
+        55,
+        10,
+        54,
+        1
+      ],
+      [
+        23,
+        31,
+        58,
+        2,
+        12,
+        19,
+        0,
+        1
+      ],
+      [
+        193,
+        9,
+        1742,
+        491,
+        96,
+        20,
+        199,
+        22
+      ],
+      [
+        98,
+        7,
+        385,
+        586,
+        16,
+        3,
+        31,
+        0
+      ],
+      [
+        312,
+        44,
+        1102,
+        152,
+        146,
+        17,
+        191,
+        9
+      ],
+      [
+        6,
+        7,
+        63,
+        4,
+        4,
+        165,
+        0,
+        8
+      ],
+      [
+        69,
+        2,
+        269,
+        40,
+        27,
+        1,
+        285,
+        0
+      ],
+      [
+        0,
+        2,
+        19,
+        0,
+        4,
+        10,
+        0,
+        60
+      ]
+    ]
+  },
+  "config": {
+    "learning_rate": 0.1,
+    "epochs": 300
+  },
+  "elapsed_seconds": 1.0289767000067513,
+  "historically_unseen_test": false,
+  "posthoc_analysis": true,
+  "freeze_receipt_sha256": "0a221195699edf51af838ca34c3c6c715880bcdd5b3f6ef85a46c3a99807a218",
+  "score_sha256": "8406c8b6808d0a2bc14340b2daff6a2d61320f84250f66a39d4601f7b760782f",
+  "text_sha256": "1e7aaf03cf0880436807e0891d0c368de27a7686673a76cdd8f87cd7d73d3e12",
+  "class_names": [
+    "Center",
+    "Donut",
+    "Edge-Loc",
+    "Edge-Ring",
+    "Loc",
+    "Random",
+    "Scratch",
+    "Near-full"
+  ],
+  "created_utc": "2026-10-16T01:42:06.232364+00:00"
+}

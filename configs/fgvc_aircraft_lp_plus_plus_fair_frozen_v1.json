@@ -1,0 +1,38 @@
+{
+  "schema_version": "fgvc_aircraft_lp_plus_plus_fair_frozen_v1",
+  "created_at": "2026-09-21",
+  "protocol": "fgvc_aircraft_variant_100way_v1",
+  "query_split": "test",
+  "development_split": "validation",
+  "mode": "lp_plus_plus_fair",
+  "class_count": 100,
+  "shots": [1, 5, 10],
+  "seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "model_identifier": "ViT-B-32/openai",
+  "support_augmentation_view_count": 1,
+  "support_augmentation_view_index": 0,
+  "lp_plus_plus_updates": 300,
+  "bias_enabled": true,
+  "alpha_initialization": "shared_mean",
+  "alpha_gradient_strategy": "cumulative_without_reset",
+  "selection_source": "Training support only",
+  "query_labels_used_for_selection": false,
+  "test_run_before_freeze": false,
+  "validation_macro_f1": {
+    "1shot": 0.20466117528554534,
+    "5shot": 0.2875936399604144,
+    "10shot": 0.3289117711804293
+  },
+  "paper": {
+    "title": "LP++: A Surprisingly Strong Linear Probe for Few-Shot CLIP",
+    "doi": "10.1109/CVPR52733.2024.02244",
+    "official_repository": "https://github.com/FereshteShakeri/FewShot-CLIP-Strong-Baseline",
+    "reference_commit": "f81054f995b060f8348d20e7306e15889b70c786"
+  },
+  "implementation_sha256": {
+    "src/wm811k/lp_plus_plus.py": "ef7409d11e758405a8a52c9802edc1248290591cd9f2aa9c4def7786fec63d7a",
+    "src/wm811k/clip_adaptation_experiment.py": "3b900a7e1991c294423fc8117ead8b94ed543f2617dc42d770d1c0908c661717",
+    "run_fgvc_aircraft_baselines.py": "eaccdae2950109161e9fb126aea03457a9802cc4293d26c6e840ebab9d899e78"
+  },
+  "protocol_note": "The public implementation's bias, shared-alpha initialization and cumulative alpha-gradient behavior are retained. The epoch budget is fixed and no Test label is used for model selection."
+}

@@ -1,0 +1,43 @@
+{
+  "all_passed": true,
+  "audits": {
+    "original": {
+      "all_passed": true,
+      "checks_count": 222,
+      "input_record_count": 870,
+      "summary_cell_count": 114,
+      "source_audit": {
+        "status": "not_requested",
+        "note": "Original files are optional for standalone count-level reproduction."
+      }
+    },
+    "clap": {
+      "all_passed": true,
+      "standard_library_only": true,
+      "original_cache_or_numpy_or_torch_required": false,
+      "method_task_json_count": 80,
+      "summary_row_count": 4,
+      "numeric_comparison_count": 400,
+      "max_absolute_error": 6.080647096950997e-11,
+      "tolerance": 1e-08,
+      "paired_unit": "ten fixed-query support-sampling seeds",
+      "t_critical_df9_975": 2.2621571628540993,
+      "historically_unseen_test": false,
+      "scope": "saved confusion matrices and summaries only; not raw-image/model rerun"
+    },
+    "global": {
+      "all_passed": true,
+      "standard_library_only": true,
+      "validation_method_task_count": 640,
+      "test_method_task_count": 200,
+      "summary_row_count": 12,
+      "numeric_comparison_count": 3128,
+      "max_absolute_error": 1.6653345369377348e-16,
+      "tolerance": 1e-08,
+      "paired_unit": "ten support-sampling seeds with fixed query set",
+      "historically_unseen_test": false,
+      "multiple_comparisons_corrected": false
+    }
+  },
+  "scope": "Saved confusion-count arithmetic and selection replay only; no encoder or model rerun, no new independent test."
+}

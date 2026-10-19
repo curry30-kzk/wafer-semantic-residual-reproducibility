@@ -1,0 +1,227 @@
+{
+  "old_mismatch_count": 10,
+  "local_match_count": 20,
+  "policy": "All 20 new Validation tasks consistently use the local cache; no mixed manifests or claim of old-grid reproduction.",
+  "tasks": [
+    {
+      "task": "100way_5shot_seed0",
+      "current_manifest_sha256": "c46db1d69f8518f8ee08353ac0ad7d63aaaf73420af5fb5b192ea7c3e61876ce",
+      "old_main_cache_manifest_sha256": "c46db1d69f8518f8ee08353ac0ad7d63aaaf73420af5fb5b192ea7c3e61876ce",
+      "old_manifest_matches": true,
+      "selected_local_cache_path": "results\\semantic_source_matching\\fgvc_validation_runs\\qwen2_5_7b_instruct\\cache\\100way_5shot_seed0.json",
+      "selected_local_cache_metadata_sha256": "a941894038c5ad77bc1171a44a5cba6be6fa3748c12b5cdc9c9d855870f8cdc1",
+      "selected_local_cache_arrays_sha256": "4af600f39ada651c3488a383df780b4665068318df167b08e04d43641c4e6a3d",
+      "selected_local_manifest_sha256": "c46db1d69f8518f8ee08353ac0ad7d63aaaf73420af5fb5b192ea7c3e61876ce",
+      "selected_local_manifest_matches": true
+    },
+    {
+      "task": "100way_5shot_seed1",
+      "current_manifest_sha256": "979611b8ef2a42d9a0e1f4de6b3dfd9dd9e4aaeb28c001c092937586787a3dba",
+      "old_main_cache_manifest_sha256": "979611b8ef2a42d9a0e1f4de6b3dfd9dd9e4aaeb28c001c092937586787a3dba",
+      "old_manifest_matches": true,
+      "selected_local_cache_path": "results\\semantic_source_matching\\fgvc_validation_runs\\qwen2_5_7b_instruct\\cache\\100way_5shot_seed1.json",
+      "selected_local_cache_metadata_sha256": "5363b7df08bd603873fd2c5e2667128d16adf9be41819777d4dd13a9d762a3ee",
+      "selected_local_cache_arrays_sha256": "87afa99ec1d8de80d99a2a236569bf323b70c9698bd5d05674452a98c5925381",
+      "selected_local_manifest_sha256": "979611b8ef2a42d9a0e1f4de6b3dfd9dd9e4aaeb28c001c092937586787a3dba",
+      "selected_local_manifest_matches": true
+    },
+    {
+      "task": "100way_5shot_seed2",
+      "current_manifest_sha256": "366030f4a5051aadbf29dedf3ffe2c9f92aec9d745212a7ee3f9ccfd9fa41dea",
+      "old_main_cache_manifest_sha256": "366030f4a5051aadbf29dedf3ffe2c9f92aec9d745212a7ee3f9ccfd9fa41dea",
+      "old_manifest_matches": true,
+      "selected_local_cache_path": "results\\semantic_source_matching\\fgvc_validation_runs\\qwen2_5_7b_instruct\\cache\\100way_5shot_seed2.json",
+      "selected_local_cache_metadata_sha256": "9118f33baf91580431eb36a91e9681f57ef532cda97fc0cba16f372ce64db8d3",
+      "selected_local_cache_arrays_sha256": "e6ff5ec59014f82de4993aa4e28df27720fb696786c17e5780e1145cfc6a3291",
+      "selected_local_manifest_sha256": "366030f4a5051aadbf29dedf3ffe2c9f92aec9d745212a7ee3f9ccfd9fa41dea",
+      "selected_local_manifest_matches": true
+    },
+    {
+      "task": "100way_5shot_seed3",
+      "current_manifest_sha256": "1e623b18eaf77cf735ea16e92f2abfc00ea1a557e8fc1559bb5361c8e9def734",
+      "old_main_cache_manifest_sha256": "1e623b18eaf77cf735ea16e92f2abfc00ea1a557e8fc1559bb5361c8e9def734",
+      "old_manifest_matches": true,
+      "selected_local_cache_path": "results\\semantic_source_matching\\fgvc_validation_runs\\qwen2_5_7b_instruct\\cache\\100way_5shot_seed3.json",
+      "selected_local_cache_metadata_sha256": "9f278bae0200d8d512c8d9aa67d8f38053a04f5ea6614cf4c4cac3c5d464a99b",
+      "selected_local_cache_arrays_sha256": "7281ccd58326b96846f62ccfbcb1e420360edfe2ad39da4631b4abf05bbb128b",
+      "selected_local_manifest_sha256": "1e623b18eaf77cf735ea16e92f2abfc00ea1a557e8fc1559bb5361c8e9def734",
+      "selected_local_manifest_matches": true
+    },
+    {
+      "task": "100way_5shot_seed4",
+      "current_manifest_sha256": "e8c64e40f20c692b7bff43e5474abee9315bc02d689ee28e154d11997822f22c",
+      "old_main_cache_manifest_sha256": "e8c64e40f20c692b7bff43e5474abee9315bc02d689ee28e154d11997822f22c",
+      "old_manifest_matches": true,
+      "selected_local_cache_path": "results\\semantic_source_matching\\fgvc_validation_runs\\qwen2_5_7b_instruct\\cache\\100way_5shot_seed4.json",
+      "selected_local_cache_metadata_sha256": "af3fe7efc513f05344aed4f1c2f9fa303d372f741a1d67333693707206df0c42",
+      "selected_local_cache_arrays_sha256": "8838dc3f4f69d86817fee5a80273a4e38df5dccc8ada20e7f3c416539e57ef04",
+      "selected_local_manifest_sha256": "e8c64e40f20c692b7bff43e5474abee9315bc02d689ee28e154d11997822f22c",
+      "selected_local_manifest_matches": true
+    },
+    {
+      "task": "100way_5shot_seed5",
+      "current_manifest_sha256": "274423d533f2cdb891a898aa021160124d33c7b5be56721210c8586745b4ce62",
+      "old_main_cache_manifest_sha256": "b83c853b5252a2e38b1ae0cc82c91c254d82fee910c40a1535d93e43a9741ee2",
+      "old_manifest_matches": false,
+      "selected_local_cache_path": "results\\semantic_source_matching\\fgvc_validation_runs\\qwen2_5_7b_instruct\\cache\\100way_5shot_seed5.json",
+      "selected_local_cache_metadata_sha256": "fc2b5d33a41c4fbd82ccfb9d7685cc861359504c9c1b3669d4f92eed1b3b8013",
+      "selected_local_cache_arrays_sha256": "a88131e3bc141c4b8d60044421ce91600491728ddc4382749546e47e2168c99d",
+      "selected_local_manifest_sha256": "274423d533f2cdb891a898aa021160124d33c7b5be56721210c8586745b4ce62",
+      "selected_local_manifest_matches": true
+    },
+    {
+      "task": "100way_5shot_seed6",
+      "current_manifest_sha256": "35bdf22eb943d619da5400f299db0f6e8c0fb9f9c844a52f1f5bd4dc44dcba04",
+      "old_main_cache_manifest_sha256": "636b4149432ac55d4309aa61bc9a98d5c334e727ac4099142cc81e628d0af9f7",
+      "old_manifest_matches": false,
+      "selected_local_cache_path": "results\\semantic_source_matching\\fgvc_validation_runs\\qwen2_5_7b_instruct\\cache\\100way_5shot_seed6.json",
+      "selected_local_cache_metadata_sha256": "9c222c382caa3e71b548aca947fbee0179c4aee3262db72252536938f47e89d0",
+      "selected_local_cache_arrays_sha256": "d6b40080873b614729ca71841137fd2f7f5862ee73e0bbb9e28a03673447bf39",
+      "selected_local_manifest_sha256": "35bdf22eb943d619da5400f299db0f6e8c0fb9f9c844a52f1f5bd4dc44dcba04",
+      "selected_local_manifest_matches": true
+    },
+    {
+      "task": "100way_5shot_seed7",
+      "current_manifest_sha256": "d878eb96de755989c2f4fae4ceb0b6039907acfaef818c3ae0f1007361c0ebc8",
+      "old_main_cache_manifest_sha256": "8ac250f0a92ff7003e883fadbb2ed1f4599395214f88b363b5dc94f7e74cf742",
+      "old_manifest_matches": false,
+      "selected_local_cache_path": "results\\semantic_source_matching\\fgvc_validation_runs\\qwen2_5_7b_instruct\\cache\\100way_5shot_seed7.json",
+      "selected_local_cache_metadata_sha256": "95c911a3eff8b2403eabd26c050ae339e7b7a5c48732cbd5c8c08300c3f7d934",
+      "selected_local_cache_arrays_sha256": "f629b8769b7ef2fdb671c0c13477c087367674b71ca0bf9b3b205a6234b4f041",
+      "selected_local_manifest_sha256": "d878eb96de755989c2f4fae4ceb0b6039907acfaef818c3ae0f1007361c0ebc8",
+      "selected_local_manifest_matches": true
+    },
+    {
+      "task": "100way_5shot_seed8",
+      "current_manifest_sha256": "b30958550ecad2a0fd9000ecf8f474121eebdae0f03472c2fd571618b55e8ed1",
+      "old_main_cache_manifest_sha256": "1d979ad66a9987903c7cc62443c66e3f2d8eebcec1e0a2a069d0dcc18fc24981",
+      "old_manifest_matches": false,
+      "selected_local_cache_path": "results\\semantic_source_matching\\fgvc_validation_runs\\qwen2_5_7b_instruct\\cache\\100way_5shot_seed8.json",
+      "selected_local_cache_metadata_sha256": "d232317ad57128023bd1bb7a9df97e9cf8db85c47c98b08bb4bd04e5b0465cb8",
+      "selected_local_cache_arrays_sha256": "be8a5327fee6c9c9fee66028f7f290527cf97ea54040b667f83174339f79faf5",
+      "selected_local_manifest_sha256": "b30958550ecad2a0fd9000ecf8f474121eebdae0f03472c2fd571618b55e8ed1",
+      "selected_local_manifest_matches": true
+    },
+    {
+      "task": "100way_5shot_seed9",
+      "current_manifest_sha256": "4cc2f4e3b73dfc1beeea3206e52e24f3b925f6a988ef9d76a0c8df9de04141c2",
+      "old_main_cache_manifest_sha256": "8863a2be9f2087d547ce2fe2e51e1f9f78e81b93fb0274d797c1a0b39c655ae8",
+      "old_manifest_matches": false,
+      "selected_local_cache_path": "results\\semantic_source_matching\\fgvc_validation_runs\\qwen2_5_7b_instruct\\cache\\100way_5shot_seed9.json",
+      "selected_local_cache_metadata_sha256": "ef3806c8b98dfe06a6e625b947084737b75fda79c834b9a26e028192a76306f0",
+      "selected_local_cache_arrays_sha256": "a279f29d8e4429aeaa24cfa60a9f64a99cc737689325725696e24038e079e501",
+      "selected_local_manifest_sha256": "4cc2f4e3b73dfc1beeea3206e52e24f3b925f6a988ef9d76a0c8df9de04141c2",
+      "selected_local_manifest_matches": true
+    },
+    {
+      "task": "100way_10shot_seed0",
+      "current_manifest_sha256": "7cec6bd21b01cff5b37e9d0b3ea4859f862934471eef93e9e39045deb29afc83",
+      "old_main_cache_manifest_sha256": "7cec6bd21b01cff5b37e9d0b3ea4859f862934471eef93e9e39045deb29afc83",
+      "old_manifest_matches": true,
+      "selected_local_cache_path": "results\\semantic_source_matching\\fgvc_validation_runs\\qwen2_5_7b_instruct\\cache\\100way_10shot_seed0.json",
+      "selected_local_cache_metadata_sha256": "b20054b789c03d7e38e7df1be9fb9fd051b405386174a4ac5e8556ed80bb5878",
+      "selected_local_cache_arrays_sha256": "665eaf71049b26aef3c5bdc538e246760dfbe30b3df47bb6944490e1e91977a7",
+      "selected_local_manifest_sha256": "7cec6bd21b01cff5b37e9d0b3ea4859f862934471eef93e9e39045deb29afc83",
+      "selected_local_manifest_matches": true
+    },
+    {
+      "task": "100way_10shot_seed1",
+      "current_manifest_sha256": "971d7ee5c77b5574d091490d9d4de6da6a3608e46bf896f8231aa447f7dba63c",
+      "old_main_cache_manifest_sha256": "971d7ee5c77b5574d091490d9d4de6da6a3608e46bf896f8231aa447f7dba63c",
+      "old_manifest_matches": true,
+      "selected_local_cache_path": "results\\semantic_source_matching\\fgvc_validation_runs\\qwen2_5_7b_instruct\\cache\\100way_10shot_seed1.json",
+      "selected_local_cache_metadata_sha256": "333ffd4c3ccac26a073eb1ef5cdfaf453e86a2fe5a8b490dcca66f81b3d69658",
+      "selected_local_cache_arrays_sha256": "332a855ddd4fc7c563856af328ce6f548e52f24eb7bff781d4a2ed02daf2ac85",
+      "selected_local_manifest_sha256": "971d7ee5c77b5574d091490d9d4de6da6a3608e46bf896f8231aa447f7dba63c",
+      "selected_local_manifest_matches": true
+    },
+    {
+      "task": "100way_10shot_seed2",
+      "current_manifest_sha256": "acbeb2bdfa4d3c6e7a6ad262b11293d4237b1f5eb32c225ca81d2a08d912dd66",
+      "old_main_cache_manifest_sha256": "acbeb2bdfa4d3c6e7a6ad262b11293d4237b1f5eb32c225ca81d2a08d912dd66",
+      "old_manifest_matches": true,
+      "selected_local_cache_path": "results\\semantic_source_matching\\fgvc_validation_runs\\qwen2_5_7b_instruct\\cache\\100way_10shot_seed2.json",
+      "selected_local_cache_metadata_sha256": "2a7ffa03364f318f4abfea763384d6db03f5b40d9fe178e60e49e3533084b36b",
+      "selected_local_cache_arrays_sha256": "620a361f51501836481d3e5cb87fd6aa7a49b67a98777f80687928edf51b9aa4",
+      "selected_local_manifest_sha256": "acbeb2bdfa4d3c6e7a6ad262b11293d4237b1f5eb32c225ca81d2a08d912dd66",
+      "selected_local_manifest_matches": true
+    },
+    {
+      "task": "100way_10shot_seed3",
+      "current_manifest_sha256": "14c723fcf4a87f1bbc5b440d697ed16b01c6afd28e54b7a9569abf0aa2535701",
+      "old_main_cache_manifest_sha256": "14c723fcf4a87f1bbc5b440d697ed16b01c6afd28e54b7a9569abf0aa2535701",
+      "old_manifest_matches": true,
+      "selected_local_cache_path": "results\\semantic_source_matching\\fgvc_validation_runs\\qwen2_5_7b_instruct\\cache\\100way_10shot_seed3.json",
+      "selected_local_cache_metadata_sha256": "6e92d2a7d07fcb5be5a08b7ab56714b7d0693d6730f85b7d886ee8ceb9ed02de",
+      "selected_local_cache_arrays_sha256": "188f9ee8ce7a338b1be1c8efcd7b116813b64632afc69cf1f1c26ab1a96cdf84",
+      "selected_local_manifest_sha256": "14c723fcf4a87f1bbc5b440d697ed16b01c6afd28e54b7a9569abf0aa2535701",
+      "selected_local_manifest_matches": true
+    },
+    {
+      "task": "100way_10shot_seed4",
+      "current_manifest_sha256": "4f1e7673b12587e0c70241cb2951941367a0dca186757b8ddad0b14043da2c54",
+      "old_main_cache_manifest_sha256": "4f1e7673b12587e0c70241cb2951941367a0dca186757b8ddad0b14043da2c54",
+      "old_manifest_matches": true,
+      "selected_local_cache_path": "results\\semantic_source_matching\\fgvc_validation_runs\\qwen2_5_7b_instruct\\cache\\100way_10shot_seed4.json",
+      "selected_local_cache_metadata_sha256": "1f1deae6c8007834b0f5b86e2703d50fcce6387988a2b7187e516485a8134bed",
+      "selected_local_cache_arrays_sha256": "eeda846b7bb0f9d52399de9e0f7ce15c6b3e3e0b62e2a1e22e5c20c722263a5b",
+      "selected_local_manifest_sha256": "4f1e7673b12587e0c70241cb2951941367a0dca186757b8ddad0b14043da2c54",
+      "selected_local_manifest_matches": true
+    },
+    {
+      "task": "100way_10shot_seed5",
+      "current_manifest_sha256": "d65f93c452f78067d3d7b9690e2ef91259836876e9e035d773157433a27a5e93",
+      "old_main_cache_manifest_sha256": "de46c5a323cfe4774ab33f894d6d662f9c4a86970baedcd72cf487e9ad9ea45e",
+      "old_manifest_matches": false,
+      "selected_local_cache_path": "results\\semantic_source_matching\\fgvc_validation_runs\\qwen2_5_7b_instruct\\cache\\100way_10shot_seed5.json",
+      "selected_local_cache_metadata_sha256": "5667f7540737012180f57b4b06ae7b3406b43bc5ae75b8ce6d636fd19d7a1e2f",
+      "selected_local_cache_arrays_sha256": "7014834d4ab650f95122efc05feca5d7f1eb06262e8973868f69b9d6da65ae69",
+      "selected_local_manifest_sha256": "d65f93c452f78067d3d7b9690e2ef91259836876e9e035d773157433a27a5e93",
+      "selected_local_manifest_matches": true
+    },
+    {
+      "task": "100way_10shot_seed6",
+      "current_manifest_sha256": "d09c54d873d07be0090ed46fea52529ebc729096fc06bbcef7ec1c9ae44ceb73",
+      "old_main_cache_manifest_sha256": "2ecbef85b5b8e1eb955206f527160ea45ae5f8d7e47b166ee21997d5409395fb",
+      "old_manifest_matches": false,
+      "selected_local_cache_path": "results\\semantic_source_matching\\fgvc_validation_runs\\qwen2_5_7b_instruct\\cache\\100way_10shot_seed6.json",
+      "selected_local_cache_metadata_sha256": "def893c090dd13df59b926e1fa9d7412e62fa7f237c5b3e9d092327a7b70f8bd",
+      "selected_local_cache_arrays_sha256": "d5ce85d18704d39bdcdcddd63251d48836a033bf23498be74553dcd9736c46e2",
+      "selected_local_manifest_sha256": "d09c54d873d07be0090ed46fea52529ebc729096fc06bbcef7ec1c9ae44ceb73",
+      "selected_local_manifest_matches": true
+    },
+    {
+      "task": "100way_10shot_seed7",
+      "current_manifest_sha256": "a90134c5e619f961f9d098fdf8ad4aa9664ee9fe80c129f1f4efb47c663d7620",
+      "old_main_cache_manifest_sha256": "045db878f7b085a7dcd25eca2c569057077d76ba29fca99121179fca8322e59c",
+      "old_manifest_matches": false,
+      "selected_local_cache_path": "results\\semantic_source_matching\\fgvc_validation_runs\\qwen2_5_7b_instruct\\cache\\100way_10shot_seed7.json",
+      "selected_local_cache_metadata_sha256": "eea3470e013b4469b921cd1ee4ac399c81b25c1933b7b77d74eef70bf60117ab",
+      "selected_local_cache_arrays_sha256": "6fe58545db50adb98616ff81713156a65d6d5a522a3eb3a2a6ce92389cf44dfb",
+      "selected_local_manifest_sha256": "a90134c5e619f961f9d098fdf8ad4aa9664ee9fe80c129f1f4efb47c663d7620",
+      "selected_local_manifest_matches": true
+    },
+    {
+      "task": "100way_10shot_seed8",
+      "current_manifest_sha256": "304ca2ae3af0f9c08d820de46b8432aeaa5b276c0c1bff12d1433fb6dba6cf8c",
+      "old_main_cache_manifest_sha256": "0eb33d18236e8000ffde2a62c30e90bbe82bae6052a3da76266a3b14af42eba4",
+      "old_manifest_matches": false,
+      "selected_local_cache_path": "results\\semantic_source_matching\\fgvc_validation_runs\\qwen2_5_7b_instruct\\cache\\100way_10shot_seed8.json",
+      "selected_local_cache_metadata_sha256": "00a027709e54fea31b0576e4c31f154fe8ca2d7118e488845f797d7baa66e3d7",
+      "selected_local_cache_arrays_sha256": "6708549f34304380cff474af5b902143f50828bce1ee40a30427d7d481fbb6e0",
+      "selected_local_manifest_sha256": "304ca2ae3af0f9c08d820de46b8432aeaa5b276c0c1bff12d1433fb6dba6cf8c",
+      "selected_local_manifest_matches": true
+    },
+    {
+      "task": "100way_10shot_seed9",
+      "current_manifest_sha256": "5025405e8abd9541e36db27885a694c72e1bdcd0e322bb5fa6ac6bbcd433e39c",
+      "old_main_cache_manifest_sha256": "be6b85b4178dbeb52f24efe72f4936596056b591991d0c8d34791263d7ea6f84",
+      "old_manifest_matches": false,
+      "selected_local_cache_path": "results\\semantic_source_matching\\fgvc_validation_runs\\qwen2_5_7b_instruct\\cache\\100way_10shot_seed9.json",
+      "selected_local_cache_metadata_sha256": "ea64ae46bb421d367f8924777f5a7b6c0c3780437f5223596528fe9f6f749cde",
+      "selected_local_cache_arrays_sha256": "f4fb9b1ae76f66078ead33b29fcac8b5439eea16bacf3adfc49f804eb6e1a4ce",
+      "selected_local_manifest_sha256": "5025405e8abd9541e36db27885a694c72e1bdcd0e322bb5fa6ac6bbcd433e39c",
+      "selected_local_manifest_matches": true
+    }
+  ]
+}

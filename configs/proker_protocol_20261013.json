@@ -1,0 +1,52 @@
+{
+  "schema_version": "proker_protocol_v1",
+  "created_date": "2026-10-13",
+  "method": "ProKeR",
+  "reference_commit": "f2ecb3d2a0d7e0993f977e550286b34f06015edb",
+  "reference_repository": "https://github.com/ybendou/ProKeR",
+  "model_identifier": "ViT-B-32-quickgelu/openai",
+  "feature_dimension": 512,
+  "shots": [1, 5, 10],
+  "seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "primary_metric": "macro_f1",
+  "secondary_metrics": ["accuracy", "balanced_accuracy"],
+  "standard_deviation": "sample, ddof=1, across ten support seeds",
+  "beta_grid": [0.5, 1.0, 2.0, 3.0],
+  "lambda_grid": [0.001, 0.01, 0.1, 1.0],
+  "candidate_count": 16,
+  "candidate_range_source": "official configs/RN50/configs_proker/fgvc.yaml; reduced fixed grid within the published range",
+  "selection_tie_break": "highest Macro-F1, then lowest beta, then lowest lambda; no Test-dependent decisions",
+  "wm_selection": {
+    "1shot": {"strategy": "external_fixed", "beta": 3.0, "lambda": 0.05,
+      "source": "official configs/RN50/configs_proker/hyperparameters.json key 1; ImageNet RN50 parameters transferred without WM tuning"},
+    "5shot_10shot": {"strategy": "support_only_grouped_5fold",
+      "groups": "unique content hashes of original support images; every augmented view remains in its image's training group",
+      "validation_features": "clean held-out support images",
+      "selection_metric": "Macro-F1 from concatenated out-of-fold predictions, separately per task"}
+  },
+  "fgvc_selection": {
+    "strategy": "existing_validation_mean_macro_f1_per_shot",
+    "validation_count": 3333,
+    "support_source": "unchanged Training support manifests, seeds 0 through 9",
+    "selection_metric": "unweighted mean Validation Macro-F1 across ten support seeds, separately for each shot",
+    "test_policy": "freeze all three parameter pairs before evaluating any ProKeR Test task"
+  },
+  "support_augmentation": {
+    "view_count": 10,
+    "combination": "concatenate normalized views as kernel support rows, as in official main.py; do not average views",
+    "seed_formula": "20260816 + shot * 100 + seed + view_index",
+    "transform": "existing dataset-specific Tip-Adapter support augmentation",
+    "unique_labeled_image_budget": "C times K; augmented views do not add labels"
+  },
+  "text_prior": "existing generic baseline prompt per class; normalized frozen CLIP text embedding",
+  "logit_scale": 1.0,
+  "kernel": "exp(-beta * (1 - normalized_X @ normalized_S.T))",
+  "solution": "A = solve(K_SS / lambda + I, one_hot_Y - S @ T.T)",
+  "query_scores": "X @ T.T + K_XS @ A",
+  "solver": "exact dense Cholesky of K_SS + lambda I, RHS multiplied by lambda; float32; no low-rank approximation",
+  "allow_tf32": false,
+  "batch_size": 32,
+  "query_labels_used_for_selection": false,
+  "history_note": "These datasets have existing Test results. This new baseline protocol freezes new selection rules before new formal evaluation; it does not restore historical Test independence or constitute prospective preregistration.",
+  "comparison_note": "Same-protocol port, not official numerical reproduction. Original grids use 200 pairs and Accuracy, original shot/seed grids differ. Current candidate budget is 16; FGVC uses full existing Validation and Macro-F1; WM uses support-only CV or external fixed parameters. Other baselines have different tuning and optimization budgets."
+}

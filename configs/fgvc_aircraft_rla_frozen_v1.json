@@ -1,0 +1,44 @@
+{
+  "schema_version": "fgvc_aircraft_rla_baseline_frozen_v1",
+  "created_at": "2026-09-22",
+  "protocol": "fgvc_aircraft_variant_100way_v1",
+  "query_split": "test",
+  "development_split": "validation",
+  "mode": "rla",
+  "class_count": 100,
+  "shots": [1, 5, 10],
+  "seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "model_identifier": "ViT-B-32-quickgelu/openai",
+  "support_augmentation_view_count": 10,
+  "epochs": 300,
+  "optimizer": "Adam",
+  "learning_rate": 0.0001,
+  "adam_eps": 0.0001,
+  "learning_rate_scheduler": "cosine_annealing",
+  "regularizer": "frobenius_distance_from_identity",
+  "regularization_lambda_policy": "one_over_shot",
+  "logit_scale": 100.0,
+  "initialization": "identity",
+  "selection_source": "Training support only",
+  "query_labels_used_for_selection": false,
+  "test_run_before_freeze": false,
+  "validation_macro_f1": {
+    "1shot": 0.2164056743929718,
+    "5shot": 0.25516155376994665,
+    "10shot": 0.28185976793564166
+  },
+  "paper": {
+    "title": "CLIP's Visual Embedding Projector is a Few-shot Cornucopia",
+    "authors": "Mohammad Fahes, Tuan-Hung Vu, Andrei Bursuc, Patrick Perez, Raoul de Charette",
+    "initial_preprint_year": 2024,
+    "venue": "WACV 2026",
+    "official_repository": "https://github.com/astra-vision/ProLIP"
+  },
+  "reference_commit": "b43e795cbf0b53a9b0aa83cf4f47d9755896ba6f",
+  "implementation_sha256": {
+    "src/wm811k/rla.py": "a80868a81d618ac07635015dfae966d493ffef872e87db881aebc7d5462398ce",
+    "src/wm811k/clip_adaptation_experiment.py": "c05286c492952017ed7b5095aecefc1e54a0013ccee51d5df69f14185dcc5dce",
+    "run_fgvc_aircraft_baselines.py": "9fc30b6189f9f7fba0cb78465d70a2cae195d9c09dbdc9ebf558aec8c17ea2f5"
+  },
+  "protocol_note": "Same-protocol port, not an official numerical reproduction: the project uses OpenAI CLIP ViT-B/32, ten rather than 300 support augmentation views, 1/5/10-shot tasks, ten seeds, and Macro-F1 as the primary metric. Hyperparameters are fixed without Validation or Test label selection."
+}

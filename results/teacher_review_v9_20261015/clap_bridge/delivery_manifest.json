@@ -1,0 +1,30 @@
+{
+  "sha256": {
+    "results\\teacher_review_v9_20261015\\clap_bridge\\audit.json": "c5d21f940b8a456e1bc0bf003e177bc08875c6c758b5aee1a9ccc7f98bcbc658",
+    "results\\teacher_review_v9_20261015\\clap_bridge\\summary.json": "184414ec2ed6cb057c9eab9968f4abb62636a278bb5581a42bd85fb9d8b267e4",
+    "results\\teacher_review_v9_20261015\\clap_bridge\\summary.csv": "a9fd6cf1353d0ece8e524d13c4154989e4f8479996a1c2861c81c6d38969c3c4",
+    "results\\teacher_review_v9_20261015\\clap_bridge\\summary_extended.json": "1d6f3a764a8a05550da524acfe7834b130c879ac7323bf2d1bcd996f320515fb",
+    "results\\teacher_review_v9_20261015\\clap_bridge\\summary_extended.csv": "9882409a387aa88550448619fe91672e33df446952422443f4c9ba2ca377d542",
+    "results\\teacher_review_v9_20261015\\clap_bridge\\budget.json": "46a0ecc8ca4146b0f64544a945ec09e9598b16885225fa989f6c0810587fa3d9",
+    "results\\teacher_review_v9_20261015\\clap_bridge\\budget.csv": "973f4f52171c4b403e0327efcc98fa18a7c1857145155bdeb660dc35737e5256",
+    "results\\teacher_review_v9_20261015\\clap_bridge\\protocol.json": "ef9bf16a082f62c6ee4f7e944dc67c9964ec0cd6bf8c4b23b4cd736c6b565d20",
+    "results\\teacher_review_v9_20261015\\clap_bridge\\freeze_receipt.json": "0a221195699edf51af838ca34c3c6c715880bcdd5b3f6ef85a46c3a99807a218",
+    "results\\teacher_review_v9_20261015\\clap_bridge\\validation_identity_resolution.json": "3094ad42e4f505dd8e99c3ab73c92ac79e36dc47d6c40d547ec58c57e5cfa08d",
+    "results\\teacher_review_v9_20261015\\clap_bridge\\input_metadata_audit.json": "e3727b43ca3813b7da19cc290bd89858a022504a27b5f9582e9ec10660be9f4c",
+    "results\\teacher_review_v9_20261015\\clap_bridge\\recompute_audit.json": "86d4b0de73e71c75ec3a0f0d28b51d09d54406c2a3ac2423d0f10ac8a1532231",
+    "docs\\paper\\revision_v9_20261015\\bridge\\PROTOCOL_NOTES.md": "01cb62318feac3a962ca9f163958427d4e3f3a9959710943ca44a0a5175075cc",
+    "docs\\paper\\revision_v9_20261015\\bridge\\RESULTS_REPORT.md": "68101171f68057e448fae5fc18e297a3383443789f65013c62e8c74e3e777385",
+    "docs\\paper\\revision_v9_20261015\\bridge\\ACCESS_AND_IMPLEMENTATION_AUDIT.md": "0a8f877a3335923bfcdd576447cfe5acc6f8bd3cfe8870e28ca858a24f2776f1",
+    "docs\\paper\\revision_v9_20261015\\bridge\\test_bridge.py": "a7cbe30dd4fd84d4dd7fb19a75c42d43dfab6a39e008e2472d837e338ed6be80",
+    "docs\\paper\\revision_v9_20261015\\bridge\\test_recompute.py": "21d28f1bbbc25f9d1cb102ff8e83c0e252918f2c8c89b046e852211ff65f6797",
+    "docs\\paper\\revision_v9_20261015\\bridge\\recompute_bridge.py": "daa9dde227ec444bdf942c6cedadd14815035b308951b05b1d398cd3918f163d",
+    "docs\\paper\\revision_v9_20261015\\bridge\\summarize_bridge.py": "637c43208c161b2cd41346308fcc8e375170ddaa8ab6cd960b5dc94899ea7446",
+    "docs\\paper\\revision_v9_20261015\\bridge\\reference\\LICENSE": "61cc363b4958705c3c4a5b510c10d5bbbe08cfe2854dc5720b828c2e1bf29807",
+    "docs\\paper\\revision_v9_20261015\\bridge\\reference\\configs\\trainers\\SGD_lr1e-1_B256_ep300.yaml": "091c67a15365a130da6d3684a289046092275478d7aadd0103df9a9acd1f6c52",
+    "docs\\paper\\revision_v9_20261015\\bridge\\reference\\experiments\\experiment_CLAP.txt": "ca8bae8dbffa8793686e0f70bd571bd5a71418099c0c53584839abcfbb775f66",
+    "docs\\paper\\revision_v9_20261015\\bridge\\reference\\trainers\\adapters.py": "a83093d8564d46827a606ad87af967919d0e1db348613f001b384f4b0a1f9449"
+  },
+  "all_results_reported": true,
+  "historically_unseen_test": false,
+  "nonfrozen_metadata_correction": "Budget label-access wording now explicitly includes prefreeze read-only Test identity checks; numerical values and all protocol/receipt-bound files unchanged."
+}

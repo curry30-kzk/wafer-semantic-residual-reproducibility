@@ -1,0 +1,350 @@
+{
+  "classwise": {
+    "grid": [
+      {
+        "candidate": 0,
+        "config": {
+          "lambda_value": 0.25,
+          "rho": 10.0
+        },
+        "mean_macro_f1": 0.3129212008729389,
+        "task_count": 20,
+        "enabled_count": 11
+      },
+      {
+        "candidate": 1,
+        "config": {
+          "lambda_value": 0.5,
+          "rho": 10.0
+        },
+        "mean_macro_f1": 0.3138077253800653,
+        "task_count": 20,
+        "enabled_count": 18
+      },
+      {
+        "candidate": 2,
+        "config": {
+          "lambda_value": 0.75,
+          "rho": 10.0
+        },
+        "mean_macro_f1": 0.31498971684172405,
+        "task_count": 20,
+        "enabled_count": 17
+      },
+      {
+        "candidate": 3,
+        "config": {
+          "lambda_value": 1.0,
+          "rho": 10.0
+        },
+        "mean_macro_f1": 0.315913257341981,
+        "task_count": 20,
+        "enabled_count": 18
+      },
+      {
+        "candidate": 4,
+        "config": {
+          "lambda_value": 0.25,
+          "rho": 1.0
+        },
+        "mean_macro_f1": 0.3151697223955645,
+        "task_count": 20,
+        "enabled_count": 18
+      },
+      {
+        "candidate": 5,
+        "config": {
+          "lambda_value": 0.5,
+          "rho": 1.0
+        },
+        "mean_macro_f1": 0.318002940420997,
+        "task_count": 20,
+        "enabled_count": 19
+      },
+      {
+        "candidate": 6,
+        "config": {
+          "lambda_value": 0.75,
+          "rho": 1.0
+        },
+        "mean_macro_f1": 0.3207864127433945,
+        "task_count": 20,
+        "enabled_count": 20
+      },
+      {
+        "candidate": 7,
+        "config": {
+          "lambda_value": 1.0,
+          "rho": 1.0
+        },
+        "mean_macro_f1": 0.3219934792837469,
+        "task_count": 20,
+        "enabled_count": 20
+      },
+      {
+        "candidate": 8,
+        "config": {
+          "lambda_value": 0.25,
+          "rho": 0.1
+        },
+        "mean_macro_f1": 0.3211618701432121,
+        "task_count": 20,
+        "enabled_count": 20
+      },
+      {
+        "candidate": 9,
+        "config": {
+          "lambda_value": 0.5,
+          "rho": 0.1
+        },
+        "mean_macro_f1": 0.3236057557949064,
+        "task_count": 20,
+        "enabled_count": 19
+      },
+      {
+        "candidate": 10,
+        "config": {
+          "lambda_value": 0.75,
+          "rho": 0.1
+        },
+        "mean_macro_f1": 0.32504213848688757,
+        "task_count": 20,
+        "enabled_count": 19
+      },
+      {
+        "candidate": 11,
+        "config": {
+          "lambda_value": 1.0,
+          "rho": 0.1
+        },
+        "mean_macro_f1": 0.32648093080650625,
+        "task_count": 20,
+        "enabled_count": 20
+      },
+      {
+        "candidate": 12,
+        "config": {
+          "lambda_value": 0.25,
+          "rho": 0.01
+        },
+        "mean_macro_f1": 0.32204876158554335,
+        "task_count": 20,
+        "enabled_count": 19
+      },
+      {
+        "candidate": 13,
+        "config": {
+          "lambda_value": 0.5,
+          "rho": 0.01
+        },
+        "mean_macro_f1": 0.325597651475194,
+        "task_count": 20,
+        "enabled_count": 20
+      },
+      {
+        "candidate": 14,
+        "config": {
+          "lambda_value": 0.75,
+          "rho": 0.01
+        },
+        "mean_macro_f1": 0.3253867922378181,
+        "task_count": 20,
+        "enabled_count": 19
+      },
+      {
+        "candidate": 15,
+        "config": {
+          "lambda_value": 1.0,
+          "rho": 0.01
+        },
+        "mean_macro_f1": 0.3258689105026253,
+        "task_count": 20,
+        "enabled_count": 19
+      }
+    ],
+    "selected": {
+      "candidate": 11,
+      "config": {
+        "lambda_value": 1.0,
+        "rho": 0.1
+      },
+      "mean_macro_f1": 0.32648093080650625,
+      "task_count": 20,
+      "enabled_count": 20
+    }
+  },
+  "global": {
+    "grid": [
+      {
+        "candidate": 0,
+        "config": {
+          "lambda_value": 0.25,
+          "rho": 10.0
+        },
+        "mean_macro_f1": 0.31282185267209833,
+        "task_count": 20,
+        "enabled_count": 10
+      },
+      {
+        "candidate": 1,
+        "config": {
+          "lambda_value": 0.5,
+          "rho": 10.0
+        },
+        "mean_macro_f1": 0.31315553714009897,
+        "task_count": 20,
+        "enabled_count": 14
+      },
+      {
+        "candidate": 2,
+        "config": {
+          "lambda_value": 0.75,
+          "rho": 10.0
+        },
+        "mean_macro_f1": 0.3135340506424496,
+        "task_count": 20,
+        "enabled_count": 14
+      },
+      {
+        "candidate": 3,
+        "config": {
+          "lambda_value": 1.0,
+          "rho": 10.0
+        },
+        "mean_macro_f1": 0.31393369942901594,
+        "task_count": 20,
+        "enabled_count": 12
+      },
+      {
+        "candidate": 4,
+        "config": {
+          "lambda_value": 0.25,
+          "rho": 1.0
+        },
+        "mean_macro_f1": 0.3135499582359037,
+        "task_count": 20,
+        "enabled_count": 13
+      },
+      {
+        "candidate": 5,
+        "config": {
+          "lambda_value": 0.5,
+          "rho": 1.0
+        },
+        "mean_macro_f1": 0.31640825004416395,
+        "task_count": 20,
+        "enabled_count": 15
+      },
+      {
+        "candidate": 6,
+        "config": {
+          "lambda_value": 0.75,
+          "rho": 1.0
+        },
+        "mean_macro_f1": 0.31916112343804764,
+        "task_count": 20,
+        "enabled_count": 17
+      },
+      {
+        "candidate": 7,
+        "config": {
+          "lambda_value": 1.0,
+          "rho": 1.0
+        },
+        "mean_macro_f1": 0.3190962890811898,
+        "task_count": 20,
+        "enabled_count": 16
+      },
+      {
+        "candidate": 8,
+        "config": {
+          "lambda_value": 0.25,
+          "rho": 0.1
+        },
+        "mean_macro_f1": 0.31880238567325697,
+        "task_count": 20,
+        "enabled_count": 16
+      },
+      {
+        "candidate": 9,
+        "config": {
+          "lambda_value": 0.5,
+          "rho": 0.1
+        },
+        "mean_macro_f1": 0.32024238514467496,
+        "task_count": 20,
+        "enabled_count": 17
+      },
+      {
+        "candidate": 10,
+        "config": {
+          "lambda_value": 0.75,
+          "rho": 0.1
+        },
+        "mean_macro_f1": 0.31956218027527267,
+        "task_count": 20,
+        "enabled_count": 16
+      },
+      {
+        "candidate": 11,
+        "config": {
+          "lambda_value": 1.0,
+          "rho": 0.1
+        },
+        "mean_macro_f1": 0.3198884584643701,
+        "task_count": 20,
+        "enabled_count": 16
+      },
+      {
+        "candidate": 12,
+        "config": {
+          "lambda_value": 0.25,
+          "rho": 0.01
+        },
+        "mean_macro_f1": 0.32012328918372374,
+        "task_count": 20,
+        "enabled_count": 17
+      },
+      {
+        "candidate": 13,
+        "config": {
+          "lambda_value": 0.5,
+          "rho": 0.01
+        },
+        "mean_macro_f1": 0.31988942957490446,
+        "task_count": 20,
+        "enabled_count": 16
+      },
+      {
+        "candidate": 14,
+        "config": {
+          "lambda_value": 0.75,
+          "rho": 0.01
+        },
+        "mean_macro_f1": 0.31936863988326,
+        "task_count": 20,
+        "enabled_count": 16
+      },
+      {
+        "candidate": 15,
+        "config": {
+          "lambda_value": 1.0,
+          "rho": 0.01
+        },
+        "mean_macro_f1": 0.3191699364559378,
+        "task_count": 20,
+        "enabled_count": 16
+      }
+    ],
+    "selected": {
+      "candidate": 9,
+      "config": {
+        "lambda_value": 0.5,
+        "rho": 0.1
+      },
+      "mean_macro_f1": 0.32024238514467496,
+      "task_count": 20,
+      "enabled_count": 17
+    }
+  }
+}

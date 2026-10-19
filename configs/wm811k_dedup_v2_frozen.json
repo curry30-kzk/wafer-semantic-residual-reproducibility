@@ -1,0 +1,114 @@
+{
+  "schema_version": "wm811k_dedup_v2_frozen_config_v1",
+  "protocol": "wm811k_dedup_8way_v2",
+  "source_pickle_sha256": "1d04fccb3dd3176b276878b926b20fead7e077c5751e4d353ea9741a5e7b5c65",
+  "dedup_audit_sha256": "f80b859e02d297f62e9510270880e51a2744f94c5cc5c6164b6ed44ec720b072",
+  "candidate_pool_sha256": "a1380ca7d90506c00bf7a0098b12913833836b7ec6e1b957472d174512c87ce9",
+  "manifest_set_sha256": "5df33d322df97b644e96a16e3838ffa4b1d195340230f6b1bbc6af1464cc498e",
+  "audit_script": {
+    "git_commit": "4b9dd02446faa0abf0b50a71b7ba8e6b3fcac994",
+    "sha256": "dc6f6f67b499190e38bccdb919a95c5338419f156d6210a5281e2396fb3ab719"
+  },
+  "visual_encoder": "open_clip:ViT-B-32-quickgelu:openai",
+  "preprocess": "wm811k_rgb224_fullframe_openai_clip_normalize_v1",
+  "augmentation": "tip_adapter_random_resized_crop_hflip_clip_normalize_v1",
+  "one_shot_anchor": "visual_prototype",
+  "five_ten_shot_anchor": "linear_probe",
+  "linear_c_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "linear_probe": {
+    "solver": "lbfgs",
+    "max_iter": 2000,
+    "random_state": 0
+  },
+  "support_augment_views": 10,
+  "lambda": 1.0,
+  "rho": 0.01,
+  "reliability_optimizer": {
+    "name": "Adam",
+    "device": "cpu",
+    "dtype": "float64",
+    "steps": 200,
+    "learning_rate": 0.05,
+    "weight_bounds": [
+      0.0,
+      1.0
+    ]
+  },
+  "structured_semantic": {
+    "version": "wm811k_codex_gpt5_structured_v1",
+    "sha256": "5ac193994bc970ace949d99d7d6cd61ae1ae18195eccb1b19469b7fee9eed641"
+  },
+  "qwen_semantic": {
+    "version": "wm811k_qwen_semantic_bundle_v1",
+    "file": "qwen2_5_7b_instruct_v1.json",
+    "sha256": "d3c31c7b1b1cd82e0f253261f317f52a4b603c220e5008e9dbe53a00f5bc2674"
+  },
+  "baseline_budgets": {
+    "lp_plus_plus_fair": {
+      "epochs": 300,
+      "support_augment_views": 1,
+      "alpha_update_interval": 10
+    },
+    "zs_lp": {
+      "epochs": 300,
+      "support_augment_views": 10,
+      "optimizer": "SGD",
+      "learning_rate": 0.1,
+      "momentum": 0.9,
+      "weight_decay": 0.0,
+      "warmup_epochs": 1,
+      "warmup_learning_rate": 0.00001,
+      "scheduler": "cosine",
+      "batch_size": 256
+    },
+    "clap": {
+      "epochs": 300,
+      "support_augment_views": 10,
+      "optimizer": "SGD",
+      "learning_rate": 0.1,
+      "momentum": 0.9,
+      "weight_decay": 0.0,
+      "warmup_epochs": 1,
+      "warmup_learning_rate": 0.00001,
+      "scheduler": "cosine",
+      "batch_size": 256
+    },
+    "rla": {
+      "epochs": 300,
+      "support_augment_views": 10,
+      "optimizer": "Adam",
+      "learning_rate": 0.0001,
+      "eps": 0.0001,
+      "scheduler": "cosine",
+      "initialization": "identity",
+      "regularization": "1/shot"
+    }
+  },
+  "formal_shots": [
+    1,
+    5,
+    10
+  ],
+  "formal_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "query_labels_used_for_selection": false,
+  "oof_scope": "content-group-isolated support-only folds",
+  "nested_cross_validation": false,
+  "fusion_and_fallback_reuse_support_oof_labels": true
+}

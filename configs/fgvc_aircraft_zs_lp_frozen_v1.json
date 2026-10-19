@@ -1,0 +1,44 @@
+{
+  "schema_version": "fgvc_aircraft_zs_lp_baseline_frozen_v1",
+  "created_at": "2026-09-21",
+  "protocol": "fgvc_aircraft_variant_100way_v1",
+  "query_split": "test",
+  "development_split": "validation",
+  "mode": "zs_lp",
+  "class_count": 100,
+  "shots": [1, 5, 10],
+  "seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "model_identifier": "ViT-B-32-quickgelu/openai",
+  "support_augmentation_view_count": 10,
+  "epochs": 300,
+  "optimizer": "SGD",
+  "learning_rate": 0.1,
+  "batch_size": 256,
+  "warmup_epochs": 1,
+  "warmup_learning_rate": 0.00001,
+  "learning_rate_scheduler": "cosine",
+  "weight_decay": 0.0,
+  "logit_scale": 100.0,
+  "initialization": "zero_shot_text_prototypes",
+  "constraint": "none",
+  "selection_source": "Training support only",
+  "query_labels_used_for_selection": false,
+  "test_run_before_freeze": false,
+  "validation_macro_f1": {
+    "1shot": 0.11717789618801541,
+    "5shot": 0.25136628682065765,
+    "10shot": 0.3334788800084134
+  },
+  "paper": {
+    "title": "A Closer Look at the Few-Shot Adaptation of Large Vision-Language Models",
+    "venue": "CVPR 2024",
+    "official_repository": "https://github.com/jusiro/CLAP"
+  },
+  "reference_commit": "dbdf4095b3d824546474c725539b9f4efff3ca0e",
+  "implementation_sha256": {
+    "src/wm811k/clap.py": "4ea3d5e8a753602f060c8437354324d325cd3ee0b9e0a022e0e4b2584ca9fdda",
+    "src/wm811k/clip_adaptation_experiment.py": "93adcd07a455366f98a7fa949bdcafa6197f5524b57a33eda30e4ae1d506174b",
+    "run_fgvc_aircraft_baselines.py": "5d7419249ab79571da354e5a9266a03054742abdabc3575ff423bfd218aba20c"
+  },
+  "protocol_note": "Same-protocol port: this project uses ten support augmentation views and ViT-B/32; the public implementation uses twenty views and reports its main comparison with RN50."
+}

@@ -1,0 +1,238 @@
+{
+  "class_names": [
+    "Center",
+    "Donut",
+    "Edge-Loc",
+    "Edge-Ring",
+    "Loc",
+    "Random",
+    "Scratch",
+    "Near-full"
+  ],
+  "class_order_sha256": "737219ce466e27f959353505c17a966ff6c4de19aab62cd717c7b8789fba0fa2",
+  "classes": [
+    {
+      "class_index": 0,
+      "class_name": "Center",
+      "prompts": [
+        "Wafer Center",
+        "Wafer Center (geometry_description)",
+        "Center: Wafer Edge",
+        "A semiconductor wafer map showing a compact cluster of defects around the geometric center with the outer area mostly clear."
+      ]
+    },
+    {
+      "class_index": 1,
+      "class_name": "Donut",
+      "prompts": [
+        "Wafer Donut",
+        "Wafer Donut (geometry_description)",
+        "Wafer Donut (confusion_boundary)",
+        "Donut: A semiconductor wafer map showing defects forming an interior annular ring around a relatively clear center and away from the outer boundary."
+      ]
+    },
+    {
+      "class_index": 2,
+      "class_name": "Edge-Loc",
+      "prompts": [
+        "Wafer-Edge-Loc",
+        "Wafer-Edge-Loc (geometry_description)",
+        "Edge-Loc: Wafer-Center",
+        "Edge-Loc: A semiconductor wafer map showing a localized cluster of defects touching one limited section of the outer boundary."
+      ]
+    },
+    {
+      "class_index": 3,
+      "class_name": "Edge-Ring",
+      "prompts": [
+        "Wafer-Edge-Ring",
+        "Wafer-Edge-Ring (geometry_description)",
+        "Edge-Ring: Wafer-Center-Spot",
+        "Edge-Ring: A semiconductor wafer map showing a broad continuous or nearly continuous ring of defects along the outer boundary of the wafer."
+      ]
+    },
+    {
+      "class_index": 4,
+      "class_name": "Loc",
+      "prompts": [
+        "Wafer Loc",
+        "Wafer Loc (geometry_description)",
+        "Wafer Loc (confusion_boundary)",
+        "Loc: Wafer with a compact off-center interior cluster of defects that does not touch the boundary"
+      ]
+    },
+    {
+      "class_index": 5,
+      "class_name": "Random",
+      "prompts": [
+        "Wafer Random",
+        "Wafer Random (geometry_description)",
+        "Wafer Random (confusion_boundary)",
+        "A semiconductor wafer map showing numerous defects scattered randomly across the surface without any consistent pattern."
+      ]
+    },
+    {
+      "class_index": 6,
+      "class_name": "Scratch",
+      "prompts": [
+        "Wafer Scratch",
+        "Wafer Scratch (geometry_description)",
+        "Wafer Scratch (confusion_boundary)",
+        "Scratch: A semiconductor wafer map showing a long, thin defect aligned along a narrow line or streak across part of the wafer."
+      ]
+    },
+    {
+      "class_index": 7,
+      "class_name": "Near-full",
+      "prompts": [
+        "Wafer with Near-full defects",
+        "Wafer with Near-full defects (geometry_description)",
+        "Wafer with Near-full defects (confusion_boundary)",
+        "A semiconductor wafer map showing Near-full defects covering almost all wafer locations with only a small amount of clear area."
+      ]
+    }
+  ],
+  "dataset": "WM-811K",
+  "metadata": {
+    "generation": {
+      "decoding": {
+        "do_sample": false,
+        "max_new_tokens": 512,
+        "maximum_calls_per_class": 2,
+        "single_class_per_call": true,
+        "torch_dtype": "bfloat16"
+      },
+      "fallback_classes": [],
+      "generated_at_utc": "2026-08-23T09:40:32.538292+00:00",
+      "kind": "constrained_language_model",
+      "manual_prompt_editing": false,
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "normalized_classes": [
+        "Center",
+        "Donut",
+        "Edge-Loc",
+        "Edge-Ring",
+        "Loc",
+        "Random",
+        "Scratch",
+        "Near-full"
+      ],
+      "records": [
+        {
+          "class_index": 0,
+          "class_name": "Center",
+          "fallback_reason": null,
+          "normalization_applied": true,
+          "official_geometry_hint": "defects form a compact cluster around the geometric center; the outer area is mostly clear",
+          "raw_outputs": [
+            "{\n  \"class_definition\": \"Wafer Center\",\n  \"geometry_description\": \"Wafer Center\",\n  \"confusion_boundary\": \"Wafer Edge\",\n  \"clip_prompt\": \"A semiconductor wafer map showing a compact cluster of defects around the geometric center with the outer area mostly clear.\"\n}"
+          ],
+          "retry_count": 0,
+          "user_prompt": "Generate the required JSON using only this official input. Keep each field concise and visually grounded; every one of the four fields must repeat the exact official class name and the word wafer; do not use abbreviations or synonyms for the class name, and do not invent causes or external facts.\n{\n  \"official_class_name\": \"Center\",\n  \"official_geometry_hint\": \"defects form a compact cluster around the geometric center; the outer area is mostly clear\",\n  \"required_fields\": [\n    \"class_definition\",\n    \"geometry_description\",\n    \"confusion_boundary\",\n    \"clip_prompt\"\n  ],\n  \"language\": \"English\"\n}",
+          "validation_errors": []
+        },
+        {
+          "class_index": 1,
+          "class_name": "Donut",
+          "fallback_reason": null,
+          "normalization_applied": true,
+          "official_geometry_hint": "defects form an interior annular ring around a relatively clear center and away from the outer boundary",
+          "raw_outputs": [
+            "{\n  \"class_definition\": \"Wafer Donut\",\n  \"geometry_description\": \"Wafer Donut\",\n  \"confusion_boundary\": \"Wafer Donut\",\n  \"clip_prompt\": \"A semiconductor wafer map showing defects forming an interior annular ring around a relatively clear center and away from the outer boundary.\"\n}"
+          ],
+          "retry_count": 0,
+          "user_prompt": "Generate the required JSON using only this official input. Keep each field concise and visually grounded; every one of the four fields must repeat the exact official class name and the word wafer; do not use abbreviations or synonyms for the class name, and do not invent causes or external facts.\n{\n  \"official_class_name\": \"Donut\",\n  \"official_geometry_hint\": \"defects form an interior annular ring around a relatively clear center and away from the outer boundary\",\n  \"required_fields\": [\n    \"class_definition\",\n    \"geometry_description\",\n    \"confusion_boundary\",\n    \"clip_prompt\"\n  ],\n  \"language\": \"English\"\n}",
+          "validation_errors": []
+        },
+        {
+          "class_index": 2,
+          "class_name": "Edge-Loc",
+          "fallback_reason": null,
+          "normalization_applied": true,
+          "official_geometry_hint": "defects form a localized cluster touching one limited section of the outer boundary",
+          "raw_outputs": [
+            "{\n  \"class_definition\": \"Wafer-Edge-Loc\",\n  \"geometry_description\": \"Wafer-Edge-Loc\",\n  \"confusion_boundary\": \"Wafer-Center\",\n  \"clip_prompt\": \"A semiconductor wafer map showing a localized cluster of defects touching one limited section of the outer boundary.\"\n}"
+          ],
+          "retry_count": 0,
+          "user_prompt": "Generate the required JSON using only this official input. Keep each field concise and visually grounded; every one of the four fields must repeat the exact official class name and the word wafer; do not use abbreviations or synonyms for the class name, and do not invent causes or external facts.\n{\n  \"official_class_name\": \"Edge-Loc\",\n  \"official_geometry_hint\": \"defects form a localized cluster touching one limited section of the outer boundary\",\n  \"required_fields\": [\n    \"class_definition\",\n    \"geometry_description\",\n    \"confusion_boundary\",\n    \"clip_prompt\"\n  ],\n  \"language\": \"English\"\n}",
+          "validation_errors": []
+        },
+        {
+          "class_index": 3,
+          "class_name": "Edge-Ring",
+          "fallback_reason": null,
+          "normalization_applied": true,
+          "official_geometry_hint": "defects form a broad continuous or nearly continuous ring along the outer boundary",
+          "raw_outputs": [
+            "{\n  \"class_definition\": \"Wafer-Edge-Ring\",\n  \"geometry_description\": \"Wafer-Edge-Ring\",\n  \"confusion_boundary\": \"Wafer-Center-Spot\",\n  \"clip_prompt\": \"A semiconductor wafer map showing a broad continuous or nearly continuous ring of defects along the outer boundary of the wafer.\"\n}"
+          ],
+          "retry_count": 0,
+          "user_prompt": "Generate the required JSON using only this official input. Keep each field concise and visually grounded; every one of the four fields must repeat the exact official class name and the word wafer; do not use abbreviations or synonyms for the class name, and do not invent causes or external facts.\n{\n  \"official_class_name\": \"Edge-Ring\",\n  \"official_geometry_hint\": \"defects form a broad continuous or nearly continuous ring along the outer boundary\",\n  \"required_fields\": [\n    \"class_definition\",\n    \"geometry_description\",\n    \"confusion_boundary\",\n    \"clip_prompt\"\n  ],\n  \"language\": \"English\"\n}",
+          "validation_errors": []
+        },
+        {
+          "class_index": 4,
+          "class_name": "Loc",
+          "fallback_reason": null,
+          "normalization_applied": true,
+          "official_geometry_hint": "defects form a compact off-center interior cluster that does not touch the boundary",
+          "raw_outputs": [
+            "{\n  \"class_definition\": \"Wafer Loc\",\n  \"geometry_description\": \"Wafer Loc\",\n  \"confusion_boundary\": \"Wafer Loc\",\n  \"clip_prompt\": \"Wafer with a compact off-center interior cluster of defects that does not touch the boundary\"\n}"
+          ],
+          "retry_count": 0,
+          "user_prompt": "Generate the required JSON using only this official input. Keep each field concise and visually grounded; every one of the four fields must repeat the exact official class name and the word wafer; do not use abbreviations or synonyms for the class name, and do not invent causes or external facts.\n{\n  \"official_class_name\": \"Loc\",\n  \"official_geometry_hint\": \"defects form a compact off-center interior cluster that does not touch the boundary\",\n  \"required_fields\": [\n    \"class_definition\",\n    \"geometry_description\",\n    \"confusion_boundary\",\n    \"clip_prompt\"\n  ],\n  \"language\": \"English\"\n}",
+          "validation_errors": []
+        },
+        {
+          "class_index": 5,
+          "class_name": "Random",
+          "fallback_reason": null,
+          "normalization_applied": true,
+          "official_geometry_hint": "defects are scattered across many unrelated locations without one stable geometric structure",
+          "raw_outputs": [
+            "{\n  \"class_definition\": \"Wafer Random\",\n  \"geometry_description\": \"Wafer Random\",\n  \"confusion_boundary\": \"Wafer Random\",\n  \"clip_prompt\": \"A semiconductor wafer map showing numerous defects scattered randomly across the surface without any consistent pattern.\"\n}"
+          ],
+          "retry_count": 0,
+          "user_prompt": "Generate the required JSON using only this official input. Keep each field concise and visually grounded; every one of the four fields must repeat the exact official class name and the word wafer; do not use abbreviations or synonyms for the class name, and do not invent causes or external facts.\n{\n  \"official_class_name\": \"Random\",\n  \"official_geometry_hint\": \"defects are scattered across many unrelated locations without one stable geometric structure\",\n  \"required_fields\": [\n    \"class_definition\",\n    \"geometry_description\",\n    \"confusion_boundary\",\n    \"clip_prompt\"\n  ],\n  \"language\": \"English\"\n}",
+          "validation_errors": []
+        },
+        {
+          "class_index": 6,
+          "class_name": "Scratch",
+          "fallback_reason": null,
+          "normalization_applied": true,
+          "official_geometry_hint": "defects align along an elongated narrow line or streak across part of the wafer",
+          "raw_outputs": [
+            "{\n  \"class_definition\": \"Wafer Scratch\",\n  \"geometry_description\": \"Wafer Scratch\",\n  \"confusion_boundary\": \"Wafer Scratch\",\n  \"clip_prompt\": \"A semiconductor wafer map showing a long, thin defect aligned along a narrow line or streak across part of the wafer.\"\n}"
+          ],
+          "retry_count": 0,
+          "user_prompt": "Generate the required JSON using only this official input. Keep each field concise and visually grounded; every one of the four fields must repeat the exact official class name and the word wafer; do not use abbreviations or synonyms for the class name, and do not invent causes or external facts.\n{\n  \"official_class_name\": \"Scratch\",\n  \"official_geometry_hint\": \"defects align along an elongated narrow line or streak across part of the wafer\",\n  \"required_fields\": [\n    \"class_definition\",\n    \"geometry_description\",\n    \"confusion_boundary\",\n    \"clip_prompt\"\n  ],\n  \"language\": \"English\"\n}",
+          "validation_errors": []
+        },
+        {
+          "class_index": 7,
+          "class_name": "Near-full",
+          "fallback_reason": null,
+          "normalization_applied": true,
+          "official_geometry_hint": "defects occupy almost all wafer locations with only a small amount of clear area",
+          "raw_outputs": [
+            "{\n  \"class_definition\": \"Wafer with Near-full defects\",\n  \"geometry_description\": \"Wafer with Near-full defects\",\n  \"confusion_boundary\": \"Wafer with Near-full defects\",\n  \"clip_prompt\": \"A semiconductor wafer map showing Near-full defects covering almost all wafer locations with only a small amount of clear area.\"\n}"
+          ],
+          "retry_count": 0,
+          "user_prompt": "Generate the required JSON using only this official input. Keep each field concise and visually grounded; every one of the four fields must repeat the exact official class name and the word wafer; do not use abbreviations or synonyms for the class name, and do not invent causes or external facts.\n{\n  \"official_class_name\": \"Near-full\",\n  \"official_geometry_hint\": \"defects occupy almost all wafer locations with only a small amount of clear area\",\n  \"required_fields\": [\n    \"class_definition\",\n    \"geometry_description\",\n    \"confusion_boundary\",\n    \"clip_prompt\"\n  ],\n  \"language\": \"English\"\n}",
+          "validation_errors": []
+        }
+      ],
+      "system_prompt": "You create controlled semantic descriptions for WM-811K wafer-map defect classification. Use only the supplied official class name and geometry hint. Do not add manufacturing causes, process conditions, physical mechanisms, statistics, or facts outside the hint. Return exactly one JSON object with four string fields: class_definition, geometry_description, confusion_boundary, and clip_prompt. Every field must contain the exact official class name. The clip_prompt must describe a semiconductor wafer map.",
+      "transformers_version": "4.46.3"
+    },
+    "validation": {
+      "class_order_checked": true,
+      "external_facts_used": false,
+      "official_geometry_hints_only": true
+    }
+  },
+  "schema_version": "wm811k_qwen_semantic_bundle_v1",
+  "source": "qwen2_5_7b_instruct"
+}
