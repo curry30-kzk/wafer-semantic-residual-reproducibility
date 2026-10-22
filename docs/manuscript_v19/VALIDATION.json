@@ -47,7 +47,26 @@
         "multiple_comparisons_corrected": false
       }
     },
+    "input_line_ending_policy": "Generated input copies match the original frozen SHA-256; only LF/CRLF candidates are accepted. Source files are unchanged.",
     "scope": "Saved confusion-count arithmetic and selection replay only; no encoder or model rerun, no new independent test."
   },
-  "limitation": "Documentation verification and saved-count arithmetic only; no image-to-result experiment rerun or new test evidence."
+  "limitation": "Documentation verification and saved-count arithmetic only; no image-to-result experiment rerun or new test evidence.",
+  "published_documentation_version": "v1.1.1",
+  "documentation_line_endings": "Git-stored LF bytes. The PUBLIC_MANIFEST inventory uses these release bytes; generated exact-freeze copies have their own original SHA-256.",
+  "hash_comparison_scope": "Original v1.0.0 Git-stored bytes, excluding the intentionally edited root README; original frozen scientific assets and original replay_all.py unchanged.",
+  "strict_input_preparation_tests": {
+    "exact_crlf_accepted": true,
+    "lf_restores_original_frozen_sha": true,
+    "numerically_modified_input_rejected": true,
+    "source_bytes_unchanged": true
+  },
+  "operational_change": "New portable replay entry point added; original scientific algorithms, count inputs, freeze manifests, expected results and thresholds untouched.",
+  "fresh_export_validation": "All three saved-count bundles passed from clean Git-export LF bytes. Generated count input copies match original recorded freeze hashes.",
+  "fresh_lf_example": {
+    "path": "docs/paper/revision_v6_20261015/reproduction/metrics_inputs.json",
+    "git_stored_crlf_count": 0,
+    "git_stored_sha256": "b8350aeb8422b333a669c02017c31c6450da90cc660a6a61b94cbccb736d9b31",
+    "exact_frozen_copy_sha256": "f434d5375d6f7f41bf8a655d2e0fd3d707f50245384d026aeebdbb3426300501",
+    "source_file_unchanged": true
+  }
 }

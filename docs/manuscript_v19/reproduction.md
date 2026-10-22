@@ -39,7 +39,7 @@ From a fresh clone, using Python 3.10 or newer:
 
 ```sh
 python -m pip install -r docs/paper/revision_v6_20261015/reproduction/requirements.txt
-python replay_all.py --output-dir recomputed/my_run
+python docs/manuscript_v19/replay_portable.py --output-dir recomputed/my_run
 ```
 
 Use a new output directory. No original images, encoder, GPU or cache is required
@@ -56,9 +56,28 @@ python -m unittest discover -s docs/paper/revision_v11_20261017/global_control -
 python audit_public_release.py
 ```
 
+The wrapper handles Git line-ending conversion by preparing two generated input
+copies. It accepts only original, LF or CRLF bytes whose SHA-256 exactly matches
+the original frozen manifest. Source scientific inputs and original freeze checks
+remain unchanged. Any substantive input modification still fails.
+
 The last command validates the released-file inventory and performs a bounded
 private-path/credential-pattern scan. This is not a guarantee that every possible
-secret format is detectable. It does not contact GitHub or a credential store.
+secret format is detectable. It does not contact GitHub or a credential store. The inventory hashes refer to
+Git-stored file bytes, with LF text line endings. If a checkout automatically
+converts text to CRLF, validate the inventory from a clean LF export, for example:
+
+```sh
+git -c core.autocrlf=false archive --format=tar HEAD -o release-tree.tar
+mkdir release-tree
+tar -xf release-tree.tar -C release-tree
+cd release-tree
+python audit_public_release.py
+```
+
+The archive and extracted folder are temporary verification artifacts, not new
+scientific inputs. Exact frozen CRLF input copies are generated under the replay
+output directory and remain distinct from Git release-byte inventory hashes.
 
 ## Original-data access and restrictions
 

@@ -1,5 +1,5 @@
 {
-  "change_scope": "Documentation relocation and readable export only; no new experiment or numeric evidence.",
+  "change_scope": "Documentation relocation plus strict LF/CRLF compatibility in the operational saved-count replay wrapper; no new experiment or numeric evidence.",
   "manuscript_source_version": "English v18, used for v19 organization revision",
   "source_files": [
     {
@@ -22,11 +22,13 @@
   "frozen_prompt_sources": [
     {
       "path": "src/wm811k/llm_descriptions.py",
-      "sha256": "5ac193994bc970ace949d99d7d6cd61ae1ae18195eccb1b19469b7fee9eed641"
+      "sha256": "5ac193994bc970ace949d99d7d6cd61ae1ae18195eccb1b19469b7fee9eed641",
+      "hash_scope": "Actual Git-stored bytes"
     },
     {
       "path": "data/processed/FGVC-Aircraft/semantics/qwen2_5_7b_instruct_v1.json",
-      "sha256": "d68fbd4b24a57c656ddff94f10264b0e91f28b6a072c3c636772e2832a5b8480"
+      "sha256": "d68fbd4b24a57c656ddff94f10264b0e91f28b6a072c3c636772e2832a5b8480",
+      "hash_scope": "Actual Git-stored bytes"
     }
   ],
   "wm_prompt_count": 32,

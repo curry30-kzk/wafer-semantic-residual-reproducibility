@@ -3,7 +3,7 @@
 This is a readable index of adaptation inputs moved from v18 Appendix E. These
 descriptions are not generated for individual query images and are not certified
 by an independent expert rating study. Original source files and metadata are
-unchanged in v1.1.0.
+unchanged in v1.1.1.
 
 ## WM: all 32 structured descriptions
 

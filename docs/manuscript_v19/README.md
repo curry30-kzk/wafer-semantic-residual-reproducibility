@@ -12,6 +12,7 @@ supplementary PDF is introduced by this revision.
 - [Configuration and complete parameter tables](configuration.md)
 - [All 32 WM prompts and 100 FGVC prompt-source assignments](semantic_inputs.md)
 - [Reproduction levels, commands, coverage and limits](reproduction.md)
+- [Portable saved-count replay entry point](replay_portable.py)
 - [v18-to-v19 location map](manuscript_mapping.md)
 - [Documentation source hashes](documentation_provenance.json)
 
@@ -25,9 +26,14 @@ This does not claim that every table, figure or new analysis in every later draf
 has its own executable replay here. Source folder version numbers are retained
 as historical evidence identifiers.
 
-Release v1.1.0 adds documentation only. Frozen configurations, prompts, code, task
-records and numerical outputs from v1.0.0 remain byte-identical. The previous tag
-v1.0.0 is retained. Main manuscript PDFs, unpublished correspondence and author
+Release v1.1.1 reorganizes documentation and fixes LF/CRLF compatibility in the
+portable saved-count replay wrapper. Frozen scientific implementations,
+configurations, prompts, task records and numerical outputs retain their original
+Git-stored bytes from v1.0.0. The new operational wrapper is added; original files retain their Git-stored bytes. The previous tags
+v1.0.0 and v1.1.0 are retained. Version v1.1.1 also aligns the inventory with actual Git-stored bytes. The wrapper
+reconstructs exact frozen bytes in generated input copies only when an LF/CRLF
+candidate matches the original recorded SHA-256; scientific source files are not
+rewritten and freeze checks are not skipped. Main manuscript PDFs, unpublished correspondence and author
 review notes are not distributed by this repository.
 
 For a complete image-to-result rerun, additional provider datasets, model weights,

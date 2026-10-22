@@ -9,8 +9,10 @@ v14. Later drafts v15–v18 and the English v19 organization revision use the sa
 three saved-count bundles listed below; this is not a claim that every later
 analysis has an executable replay here. Manuscript PDFs are not included.
 Historical folder version numbers identify evidence snapshots and are retained
-to preserve paths and provenance. Release v1.1.0 adds documentation only; original
-code, configurations, prompts and numerical assets are unchanged from v1.0.0.
+to preserve paths and provenance. Release v1.1.1 reorganizes documentation and fixes cross-platform line-ending
+compatibility in the portable saved-count replay wrapper. Frozen scientific
+implementations, configurations, prompts and numerical assets are unchanged from
+v1.0.0. The previous tags remain available.
 
 Readable configuration tables, all 32 WM prompts, FGVC prompt-source assignments,
 reproduction steps and the manuscript location map are collected in
@@ -26,11 +28,19 @@ feature/score arrays and has not been verified as an image-to-result rerun.
 
 ## Quick start: reproduce the saved statistics
 
-Use Python 3.10 or newer. Run these commands from the repository root:
+Use Python 3.10 or newer. For a new checkout with release-byte line endings
+(including on Windows), clone with:
+
+```sh
+git clone --config core.autocrlf=false https://github.com/curry30-kzk/wafer-semantic-residual-reproducibility.git
+cd wafer-semantic-residual-reproducibility
+```
+
+Run these commands from the repository root:
 
 ```sh
 python -m pip install -r docs/paper/revision_v6_20261015/reproduction/requirements.txt
-python replay_all.py --output-dir recomputed/first_run
+python docs/manuscript_v19/replay_portable.py --output-dir recomputed/first_run
 ```
 
 Choose a new output directory on each run. No GPU, PyTorch, original dataset,
@@ -39,6 +49,13 @@ recomputes each task's metrics directly from saved integer confusion counts,
 then checks means, sample standard deviations, paired differences and intervals
 against the saved summaries. The summaries are comparison targets, not inputs
 from which task counts are reconstructed.
+
+The replay wrapper restores only LF/CRLF variants of two generated input copies,
+and accepts a copy only when its SHA-256 exactly matches the original frozen
+manifest. It does not modify source inputs or bypass the frozen scripts' checks.
+The released-file inventory records Git-stored bytes. On checkouts with automatic
+line-ending conversion, use a clean LF export to verify that inventory; generated
+frozen copies have their separate original freeze hashes.
 
 The verified scope is:
 

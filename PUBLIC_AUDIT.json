@@ -1,11 +1,11 @@
 {
   "all_passed": true,
-  "public_file_count_excluding_audit_and_manifest": 1771,
-  "public_file_bytes_excluding_audit_and_manifest": 339372702,
+  "public_file_count_excluding_audit_and_manifest": 1772,
+  "public_file_bytes_excluding_audit_and_manifest": 323672965,
   "largest_file": {
     "path": "docs/paper/revision_v6_20261015/reproduction/metrics_inputs.json",
-    "bytes": 5966944,
-    "sha256": "f434d5375d6f7f41bf8a655d2e0fd3d707f50245384d026aeebdbb3426300501"
+    "bytes": 5966943,
+    "sha256": "b8350aeb8422b333a669c02017c31c6450da90cc660a6a61b94cbccb736d9b31"
   },
   "findings": [],
   "scanner_scope": [
