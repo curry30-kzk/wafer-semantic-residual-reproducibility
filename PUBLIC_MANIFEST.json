@@ -14,8 +14,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7540,
-      "sha256": "968e343011657c0c109de086085969dd10d9e7939582cb4cad7a406d50ae52b5"
+      "bytes": 8372,
+      "sha256": "50ebdf2f28fe7a01b8b24259b90cd9e2d76d2e383f69d93fd0e0e49e0ae80acb"
     },
     {
       "path": "RIGHTS.md",
@@ -381,6 +381,41 @@
       "path": "data/processed/WM811K_dedup_v2/splits/8way_5shot_seed9.json",
       "bytes": 4813695,
       "sha256": "b88901e503e6be37adc7658c99430e233a1c2c1ecd1e3b7fc75589cd22a4a272"
+    },
+    {
+      "path": "docs/manuscript_v19/README.md",
+      "bytes": 2028,
+      "sha256": "f5c4be420a64d5c9557fb048d2de8ef16c98113fe3e2dda5353b04c12f952bf8"
+    },
+    {
+      "path": "docs/manuscript_v19/VALIDATION.json",
+      "bytes": 2078,
+      "sha256": "93e2967a2082cd59a96364735bc8590b0afc23fff41e99ce01e4ae18c8b4ff60"
+    },
+    {
+      "path": "docs/manuscript_v19/configuration.md",
+      "bytes": 6686,
+      "sha256": "5be71feb77b874cf6830101353e90d7078bacf9e04b49b5e8be939a16995bfe2"
+    },
+    {
+      "path": "docs/manuscript_v19/documentation_provenance.json",
+      "bytes": 1323,
+      "sha256": "43134ef71c69f47908d4d5708ab42e82ef767993793ef0c0168146e2d4c72602"
+    },
+    {
+      "path": "docs/manuscript_v19/manuscript_mapping.md",
+      "bytes": 2263,
+      "sha256": "afe30fc4cd2f60a6abe27903fd2de7604415d8bbe8e2b81f7a0d6a560e493abe"
+    },
+    {
+      "path": "docs/manuscript_v19/reproduction.md",
+      "bytes": 5185,
+      "sha256": "ce13c95fb0d0a76dce43f487d6f0cc4ba4f26ab33de99445625867b4210eecb7"
+    },
+    {
+      "path": "docs/manuscript_v19/semantic_inputs.md",
+      "bytes": 12263,
+      "sha256": "95df081d0ff0fc1ff5f656506c383b7d61803633ec2546bb8a5384337620b1c2"
     },
     {
       "path": "docs/paper/revision_v11_20261017/global_control/recompute_control.py",

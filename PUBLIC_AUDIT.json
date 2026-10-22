@@ -1,7 +1,7 @@
 {
   "all_passed": true,
-  "public_file_count_excluding_audit_and_manifest": 1764,
-  "public_file_bytes_excluding_audit_and_manifest": 339340044,
+  "public_file_count_excluding_audit_and_manifest": 1771,
+  "public_file_bytes_excluding_audit_and_manifest": 339372702,
   "largest_file": {
     "path": "docs/paper/revision_v6_20261015/reproduction/metrics_inputs.json",
     "bytes": 5966944,

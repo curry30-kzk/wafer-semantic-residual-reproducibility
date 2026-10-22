@@ -4,10 +4,19 @@ Reproducibility materials for **面向小样本晶圆缺陷分类的支持集驱
 (Support-Driven Classwise Semantic Residual Adaptation for Few-Shot Wafer Defect
 Classification).
 
-The scientific evidence corresponds to the current Chinese v14 manuscript. The
-private manuscript draft is not included; historical version numbers in folders
-identify the original evidence snapshots and are retained to keep relative paths
-and provenance understandable.
+The original public scientific-evidence snapshot corresponds to Chinese manuscript
+v14. Later drafts v15–v18 and the English v19 organization revision use the same
+three saved-count bundles listed below; this is not a claim that every later
+analysis has an executable replay here. Manuscript PDFs are not included.
+Historical folder version numbers identify evidence snapshots and are retained
+to preserve paths and provenance. Release v1.1.0 adds documentation only; original
+code, configurations, prompts and numerical assets are unchanged from v1.0.0.
+
+Readable configuration tables, all 32 WM prompts, FGVC prompt-source assignments,
+reproduction steps and the manuscript location map are collected in
+[`docs/manuscript_v19/`](docs/manuscript_v19/README.md). The v19 manuscript retains
+its necessary appendices in the same file; it introduces no separate supplementary
+PDF. The reproduction level remains saved-confusion-count statistical recalculation.
 
 This repository contains the frozen implementation/configuration snapshot,
 semantic descriptions, support/query task manifests and saved confusion-count

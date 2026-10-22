@@ -1,0 +1,36 @@
+{
+  "change_scope": "Documentation relocation and readable export only; no new experiment or numeric evidence.",
+  "manuscript_source_version": "English v18, used for v19 organization revision",
+  "source_files": [
+    {
+      "path": "sections/protocol_detail.tex",
+      "sha256": "7acdcd7acb74c59e55ae4ea7a43a3dbbb9fe074e6efcb56ecd8e31a559664c01"
+    },
+    {
+      "path": "sections/wm_parameter_mapping.tex",
+      "sha256": "e48ee63f0cf48bd1279110360244c5f495daa685a61dabff4f714b8ed1a17a1d"
+    },
+    {
+      "path": "sections/appendix_reproduction.tex",
+      "sha256": "3f6646c00b46907f557d31819f8c3724d6a7b444a46ea319a5b9687f8b12a3ae"
+    },
+    {
+      "path": "sections/prompt_example_table.tex",
+      "sha256": "425fcba0db3511284a41222ef45053e4573efa26e3ff58d78c5b72cfcc6d67da"
+    }
+  ],
+  "frozen_prompt_sources": [
+    {
+      "path": "src/wm811k/llm_descriptions.py",
+      "sha256": "5ac193994bc970ace949d99d7d6cd61ae1ae18195eccb1b19469b7fee9eed641"
+    },
+    {
+      "path": "data/processed/FGVC-Aircraft/semantics/qwen2_5_7b_instruct_v1.json",
+      "sha256": "d68fbd4b24a57c656ddff94f10264b0e91f28b6a072c3c636772e2832a5b8480"
+    }
+  ],
+  "wm_prompt_count": 32,
+  "fgvc_prompt_class_count": 100,
+  "fgvc_accepted_qwen_classes": 42,
+  "fgvc_fallback_classes": 58
+}
