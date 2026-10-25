@@ -71,7 +71,7 @@ def main():
         return json.loads(source(path).read_text(encoding='utf-8-sig'))
     base = 'docs/paper/revision_v6_20261015/reproduction'
     payload = read(f'{base}/metrics_inputs.json')
-    reference = read(f'{base}/recomputed/statistics.json')
+    reference = read('paper_evidence/figures/reference_statistics.json')
     groups, records = (defaultdict(dict), defaultdict(list))
     selected = {m[0] for m in METHODS}
     for record in payload['records']:

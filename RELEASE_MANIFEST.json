@@ -1233,8 +1233,8 @@
     {
       "path": "docs/paper/revision_v20_20261024/figure_source/draw_results.py",
       "group": "evidence",
-      "public_sha256": "29465d6fd0147261054ec8ee8a2c5f91536a19f1af221ebed169c541f04c5d26",
-      "public_bytes": 17638
+      "public_sha256": "36a2305409328b21a88cce250c176cb46aa42587b0314824bbba4a844e7d0cd0",
+      "public_bytes": 17652
     },
     {
       "path": "docs/paper/revision_v20_20261024/figure_source/draw_validation_sensitivity_english.py",
@@ -1520,6 +1520,17 @@
       "description": "Figure1 exact manifest-bound support/query indices and semantic text; original images obtained separately"
     },
     {
+      "path": "paper_evidence/figures/reference_statistics.json",
+      "group": "evidence",
+      "public_sha256": "d6e9b7fee5e15d80a543bb975a673132e55e7aa75a740d67262ddc6450d57a1c",
+      "public_bytes": 316997,
+      "original_sha256": "d6e9b7fee5e15d80a543bb975a673132e55e7aa75a740d67262ddc6450d57a1c",
+      "original_bytes": 316997,
+      "source_path": "output/repro_audit_20261025/runtime_evidence/portable_replay/original/statistics.json",
+      "description": "Verified saved-statistics reference used only to cross-check Figure 2; values still computed from counts",
+      "transformation": "Byte-identical copy of an actual saved-statistics recalculation, not a model-training output"
+    },
+    {
       "path": "paper_evidence/manuscript_targets.json",
       "group": "evidence",
       "public_sha256": "02dbcf9dcfcf4ebad6f70ea24d802795850eee2d3da425d190e8000fe1e453ce",
@@ -1528,8 +1539,8 @@
     {
       "path": "paper_evidence/ORIGINAL_EXPORT_PROVENANCE.json",
       "group": "evidence",
-      "public_sha256": "cbfde69e0a3a6b808430ea0089ec65ae198df68afc481cfa0aeaa44a03246d72",
-      "public_bytes": 672058,
+      "public_sha256": "b364ec1cabcf87396876fc108cc1d3a73b5b18ae39c4898b3f3e9fd5a618ed01",
+      "public_bytes": 672684,
       "description": "Explicit original/export identity map for every new source export"
     },
     {
