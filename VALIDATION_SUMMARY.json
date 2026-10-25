@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-25",
+  "release": "v1.2.0",
+  "historical_base": "v1.1.1",
+  "tested_environment": {
+    "python": "3.11.7",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "packages": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "torch": "2.7.1",
+      "scikit-learn": "1.4.2",
+      "matplotlib": "3.10.8",
+      "Pillow": "10.4.0",
+      "PyMuPDF": "1.26.4",
+      "pandas": "3.0.3"
+    }
+  },
+  "environment_scope": "New verification environment, not a reconstruction of the original GPU training environment.",
+  "new_unit_tests": 6,
+  "original_unit_tests": 21,
+  "original_saved_statistic_checks": {
+    "main": 222,
+    "clap": 400,
+    "global": 3128
+  },
+  "additional_original_branch_evidence_checks": 174,
+  "cache_refitting": {
+    "datasets": [
+      "WM structured",
+      "WM Qwen",
+      "FGVC original main"
+    ],
+    "shots": [
+      5,
+      10
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "tasks": 60,
+    "all_passed": true,
+    "all_predictions_and_confusion_counts_identical": true,
+    "maximum_metric_absolute_error": 0.0,
+    "scope": "Residual refitting from existing visual/OOF/semantic score arrays only."
+  },
+  "figures": {
+    "rendered": 6,
+    "provider_inputs_required": [
+      1,
+      4
+    ],
+    "layout_adjustment": "Shortened panel-b row guides in Figure 3 to keep guides out of the mean-value column; no values changed."
+  },
+  "not_executed": [
+    "Original-image encoder extraction",
+    "Visual LP and OOF fold reconstruction",
+    "All baseline model training",
+    "New independent wafer Test",
+    "Full source-pickle preparation"
+  ],
+  "raw_provider_images_or_model_weights_shipped": false,
+  "original_freeze_hashes_modified": false,
+  "rights": "RIGHTS.md and upstream terms apply; no new blanket reuse licence is granted."
+}

@@ -20,3 +20,8 @@ recomputed/
 .env
 .env.*
 prepare_public_export.py
+
+# Optional cache archives are distributed separately from source Git history.
+**/cache/
+results/revision_v4_20261013/same_text_proker/text_wm.json
+results/revision_v4_20261013/same_text_proker/text_fgvc.json

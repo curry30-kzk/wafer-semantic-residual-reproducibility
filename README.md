@@ -1,160 +1,112 @@
 # Support-driven classwise semantic residual adaptation
 
-Reproducibility materials for **面向小样本晶圆缺陷分类的支持集驱动类别级语义残差适配**
-(Support-Driven Classwise Semantic Residual Adaptation for Few-Shot Wafer Defect
-Classification).
+## v1.2.0 reproduction materials for manuscript v20
 
-The original public scientific-evidence snapshot corresponds to Chinese manuscript
-v14. Later drafts v15–v18 and the English v19 organization revision use the same
-three saved-count bundles listed below; this is not a claim that every later
-analysis has an executable replay here. Manuscript PDFs are not included.
-Historical folder version numbers identify evidence snapshots and are retained
-to preserve paths and provenance. Release v1.1.1 reorganizes documentation and fixes cross-platform line-ending
-compatibility in the portable saved-count replay wrapper. Frozen scientific
-implementations, configurations, prompts and numerical assets are unchanged from
-v1.0.0. The previous tags remain available.
+Original v1.1.1 remains unchanged. This version adds missing original evidence
+and portable data access,
+without changing the manuscript's numerical results or creating an independent Test.
 
-Readable configuration tables, all 32 WM prompts, FGVC prompt-source assignments,
-reproduction steps and the manuscript location map are collected in
-[`docs/manuscript_v19/`](docs/manuscript_v19/README.md). The v19 manuscript retains
-its necessary appendices in the same file; it introduces no separate supplementary
-PDF. The reproduction level remains saved-confusion-count statistical recalculation.
+### 1. Saved statistics and original supporting evidence
 
-This repository contains the frozen implementation/configuration snapshot,
-semantic descriptions, support/query task manifests and saved confusion-count
-evidence used in the study. It supports a **standalone replay of saved-result
-statistics**. The public package does not include raw images, model weights or
-feature/score arrays and has not been verified as an image-to-result rerun.
-
-## Quick start: reproduce the saved statistics
-
-Use Python 3.10 or newer. For a new checkout with release-byte line endings
-(including on Windows), clone with:
-
-```sh
-git clone --config core.autocrlf=false https://github.com/curry30-kzk/wafer-semantic-residual-reproducibility.git
-cd wafer-semantic-residual-reproducibility
-```
-
-Run these commands from the repository root:
+Use Python3.10 or newer. In a clean checkout/extracted source package:
 
 ```sh
 python -m pip install -r docs/paper/revision_v6_20261015/reproduction/requirements.txt
-python docs/manuscript_v19/replay_portable.py --output-dir recomputed/first_run
+python release_integrity.py
+python replay_all.py --output-dir recomputed/main_run
+python reproduce_paper_evidence.py --output-dir recomputed/paper_evidence_run
 ```
 
-Choose a new output directory on each run. No GPU, PyTorch, original dataset,
-private directory or feature cache is needed for this replay. The command
-recomputes each task's metrics directly from saved integer confusion counts,
-then checks means, sample standard deviations, paired differences and intervals
-against the saved summaries. The summaries are comparison targets, not inputs
-from which task counts are reconstructed.
+Every output directory must be new. The root replay now delegates to the strict
+portable wrapper. Generated input copies must match historical freeze SHA values;
+scientific count files and original protocols are not edited or bypassed.
 
-The replay wrapper restores only LF/CRLF variants of two generated input copies,
-and accepts a copy only when its SHA-256 exactly matches the original frozen
-manifest. It does not modify source inputs or bypass the frozen scripts' checks.
-The released-file inventory records Git-stored bytes. On checkouts with automatic
-line-ending conversion, use a clean LF export to verify that inventory; generated
-frozen copies have their separate original freeze hashes.
+The first command group covers the original222/400/3128 saved-statistic checks.
+The added evidence command directly checks original semantic-source Validation,
+classwise coefficients, OOF activation, the historical grid, case scores and
+three-query exclusion. See [all13 tables and6 figures](docs/manuscript_v20/artifact_map.md).
+The main/public source file names retain original historical version identifiers.
 
-The verified scope is:
-
-| Evidence | Saved task records | Verification |
-|---|---:|---:|
-| Main results, ablations and shared-text controls | 870 deduplicated count records; 114 summary cells | 222 checks |
-| Shared-text CLAP comparison | 80 method/task records | 400 numeric comparisons |
-| Independently selected global/classwise and visual-OOF controls | 640 Validation + 200 Test records | 3,128 numeric comparisons |
-
-The first block requires NumPy/SciPy. The latter two replay scripts use only the
-Python standard library. The commands below run the existing arithmetic and
-malformed-input checks; they do not run model training:
+### 2. Render figures
 
 ```sh
-python -m unittest discover -s docs/paper/revision_v6_20261015/reproduction -p test_recompute.py
-python -m unittest discover -s docs/paper/revision_v9_20261015/bridge -p test_recompute.py
-python -m unittest discover -s docs/paper/revision_v11_20261017/global_control -p test_recompute_control.py
+python -m pip install -r requirements_figures.txt
+python draw_paper_figures.py --output-dir recomputed/figures
 ```
 
-## What is included
-
-- `src/` and root `run_*.py`: the archived method implementations and experiment
-  entry points. The frozen vision-language encoder is CLIP ViT-B/32; the residual
-  stage learns one bounded, zero-shrunk coefficient per class while keeping the
-  already fitted visual classifier fixed.
-- `configs/`: frozen task/method settings, grids and provenance metadata.
-- `data/processed/*/semantics/`: frozen Qwen semantic bundles, including the
-  generation metadata retained in the source snapshot. WM's structured prompts
-  are also defined in `src/wm811k/llm_descriptions.py`.
-- `data/processed/*/splits/`: the supplied 5/10-shot task manifests, source image
-  identifiers/labels and ordering. These manifests contain no image pixels.
-- `docs/paper/revision_v6_20261015/reproduction/`: compact saved count inputs and
-  their arithmetic replay. The source manifest is historical provenance; not
-  every upstream raw result it names is included here.
-- `docs/paper/revision_v9_20261015/bridge/` and
-  `docs/paper/revision_v11_20261017/global_control/`: supplementary comparison
-  runners and arithmetic replay scripts at their original relative locations.
-- `results/teacher_review_v*/`: numerical records only. The directory names are
-  historical experiment identifiers; no review reports or correspondence are
-  included. Validation grids are retained even when a comparison is unfavorable.
-- `verification_outputs/`: actual local replay results from the public export.
-- `EXPORT_PROVENANCE.json`: original snapshot hashes and public export hashes.
-  `PUBLIC_MANIFEST.json`: the released-file hash inventory.
-
-## Image-level reruns require additional inputs
-
-The full experiment dependencies are listed in `requirements.txt`. After legally
-obtaining the datasets and installing the model dependencies, inspect the real
-entry points with:
+This renders statistical figures2,3,5,C.1 from original records. Figures1/4 need
+provider images/arrays. Obtain the original WM-811K source lawfully, then:
 
 ```sh
-python run_wm811k_dedup_v2.py --help
-python run_wm811k_dedup_v2.py cache --help
-python run_class_reliability_residual.py --help
-python run_fgvc_aircraft_final_test.py --help
-python run_proker_baselines.py --help
+python prepare_wafer_illustrations.py --wm-pickle PATH_TO_LSWMD.pkl --output-dir local_wafer_inputs
+python draw_paper_figures.py --output-dir recomputed/all_figures --wm-images local_wafer_inputs/images --wafer-observations local_wafer_inputs/wafer_observations.npz
 ```
 
-These are executable command-line entry points, not a claim that `--help`
-reproduces an experiment. Raw-data preprocessing/image export, the complete WM
-deduplication-audit/candidate-pool files, some 1-shot manifests, historical
-visual/OOF score caches, encoded text prototypes and checkpoint files are not
-included. Frozen CLAP/global runners explicitly check the original cache hashes;
-they cannot be run against this lightweight package alone. Reconstructed image
-caches can differ across software/hardware versions. Do not bypass their checks
-or call a newly generated cache bit-identical to a missing historical cache.
+No observed wafer pixels, FGVC photos or third-party model weights are shipped.
+Installed fonts can alter layout metrics slightly; the numeric source branch is unchanged.
 
-For raw data use the original providers:
-[WM-811K](http://mirlab.org/dataSet/public/) and
-[FGVC-Aircraft](https://www.robots.ox.ac.uk/~vgg/data/fgvc-aircraft/).
-This repository grants no new rights to these datasets. See [RIGHTS.md](RIGHTS.md)
-for retained third-party notices and the status of author-owned additions.
+### 3. Optional cache-to-result residual fitting
 
-## Interpretation and provenance
+Extract the separate cache ZIP over this source root, preserving relative paths.
+Install the model dependencies (requirements.txt), then run:
 
-- WM Test was observed during earlier method development. Content deduplication
-  addresses identical-content support/query leakage but does not restore
-  historical test independence. WM results are retrospective evidence.
-- The added shared-text CLAP and global/OOF comparisons are post-hoc controls.
-  Their new Validation selections constrain those comparisons; a freeze receipt
-  does not turn them into an independently unseen external test.
-- Ten support seeds share a fixed query set. The paired intervals describe
-  variation across those support samples; they are not ten independent test
-  datasets, fabs or future production batches.
-- FGVC's shared-text CLAP comparison does not establish a Macro-F1 advantage for
-  the proposed method; crossing-zero intervals also do not establish equivalence.
-- The claimed `C` extra parameters concern the residual stage only. They exclude
-  prior visual-head fitting, OOF construction and encoder feature extraction.
-- Personal machine paths in a small number of JSON metadata fields were
-  relativized for this export. Numerical results, class names, prompts and core
-  Python code were not changed. The original arithmetic input/manifest trio is
-  byte-identical, so its original internal SHA checks remain active. Original
-  freeze receipts retain upstream hashes; they are provenance records, while
-  `PUBLIC_MANIFEST.json` verifies the actual public files.
+```sh
+python release_integrity.py --with-caches
+python reproduce_cached_residual.py --datasets wm_structured wm_qwen fgvc --shots 5 10 --seeds 0 1 2 3 4 5 6 7 8 9 --output-dir recomputed/cached_residual
+```
 
-## 中文说明
+This refits the frozen classwise residual using already saved visual/OOF/semantic
+scores. It does not rebuild encoder features, visual LP heads or OOF folds, and
+does not retrain every baseline or recreate all historical model selection.
+Archived strict CLAP/global model runners are historical code: their original
+private-byte receipts are retained; the saved-count replay for these controls works,
+but this release does not claim their model training has been publicly rerun.
 
-本仓库公开代码、冻结配置、语义描述、支持/查询清单和保存的统计证据，
-可直接重算论文已保存的混淆计数及配对统计。它不是新的独立晶圆测试，
-也不包含从原始图像到全部最终结果的一键复现实验。原图、模型权重和特征
-缓存需按原提供方规则另行获取；缺少的历史缓存不能用汇总数字反推或伪造。
-WM 历史测试暴露和 CLAP 对照的结论边界保持公开。
+### Identities and source provenance
+
+RELEASE_MANIFEST.json binds current public bytes. original_sha256 is a separate
+historical identity, not a claim that compact/path-redacted JSON has identical bytes.
+UTF-8 LF/CRLF transport may be accepted only if a candidate exactly matches the
+declared public SHA. Changed numeric values, missing required caches, binary
+changes and escaping paths are rejected. Source files are never rewritten to pass.
+
+The original/export ledger is paper_evidence/ORIGINAL_EXPORT_PROVENANCE.json.
+Original v1.1.1 inventory/scan records are at archive/v1_1_1/; use release_integrity.py
+for the new candidate. No new license, author identity, DOI or live data-repository
+record is invented. RIGHTS.md and all upstream notices remain applicable.
+
+### Evidence boundaries
+
+WM Test was observed during early development; deduplication does not restore
+independence. CLAP Macro-F1 superiority is not established. Ten support seeds
+share fixed queries. Extra C parameters refer only to the residual stage.
+These boundaries remain unchanged by exporting more evidence.
+
+### Provider data
+
+WM-811K: http://mirlab.org/dataSet/public/
+FGVC-Aircraft: https://www.robots.ox.ac.uk/~vgg/data/fgvc-aircraft/
+
+Full original-image execution has not been rerun here. New provider-side preparation
+can acquire a new content/run identity; it must not be mislabeled as an identical
+historical cache. The added preparation CLIs have portable defaults but retain the
+original algorithm; historical preparation receipts are evidence, not a new image audit.
+
+### Release assets and tested environment
+
+Download both ZIPs from the [v1.2.0 release](https://github.com/curry30-kzk/wafer-semantic-residual-reproducibility/releases/tag/v1.2.0).
+Supplementary_Data_S1.zip is a complete source/evidence tree; extract it first.
+Reproduction_Caches_S2.zip overlays the 310 optional cache files on that tree.
+The cache archive alone is not executable. The Git checkout contains the source/
+evidence tree and the full release manifest but excludes these optional caches.
+No archive download is needed for saved-statistics recalculation.
+
+VALIDATION_SUMMARY.json records the checks actually executed and the new CPU
+environment. requirements_tested_statistics.txt and
+requirements_tested_cache_figures.txt record tested package versions separately
+from the original broad installation requirements. They do not assert cross-platform
+bitwise identity or recover unrecorded historical dependencies.
+
+The two ZIPs contain research data/code, not a separate supplementary manuscript
+PDF. Their journal upload item type and file-size limits must be checked in the
+actual submission system; a public release link is an alternative access route.

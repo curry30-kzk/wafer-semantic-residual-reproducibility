@@ -1,0 +1,10 @@
+# Actual new CPU cache/plot verification environment; Python 3.11.7.
+# Install torch using the appropriate official CPU/platform index if needed.
+numpy==2.4.6
+scipy==1.17.1
+torch==2.7.1
+scikit-learn==1.4.2
+matplotlib==3.10.8
+Pillow==10.4.0
+PyMuPDF==1.26.4
+pandas==3.0.3

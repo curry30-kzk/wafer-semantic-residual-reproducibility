@@ -1,20 +1,6 @@
 {
-  "all_passed": true,
-  "public_file_count_excluding_audit_and_manifest": 1772,
-  "public_file_bytes_excluding_audit_and_manifest": 323672965,
-  "largest_file": {
-    "path": "docs/paper/revision_v6_20261015/reproduction/metrics_inputs.json",
-    "bytes": 5966943,
-    "sha256": "b8350aeb8422b333a669c02017c31c6450da90cc660a6a61b94cbccb736d9b31"
-  },
-  "findings": [],
-  "scanner_scope": [
-    "personal_windows_path",
-    "windows_absolute_path",
-    "unix_personal_path",
-    "private_ipv4",
-    "credential_value",
-    "excluded_binary_type"
-  ],
-  "limitation": "Pattern scan and allowlisted export, not a guarantee against every credential format. No image-level model rerun or test-independence claim."
+  "status": "historical_inventory_superseded_for_candidate",
+  "original": "archive/v1_1_1/PUBLIC_AUDIT.json",
+  "current_public_identity_manifest": "RELEASE_MANIFEST.json",
+  "scope": "Original v1.1.1 record retained byte-for-byte at archive path; not a claim about new candidate files."
 }

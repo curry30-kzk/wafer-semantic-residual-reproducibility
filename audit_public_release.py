@@ -33,6 +33,13 @@ def public_files():
 
 
 def main():
+    if (ROOT / 'RELEASE_MANIFEST.json').exists():
+        import sys
+        from release_integrity import verify_release
+        result = verify_release(ROOT, with_caches='--with-caches' in sys.argv[1:])
+        result['audit_scope'] = 'New release file identities; original v1.1.1 inventory and scan are archived separately.'
+        print(json.dumps(result, indent=2))
+        return
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--write-manifest', action='store_true', help='Create the released-file SHA inventory and audit report')
     args = parser.parse_args()

@@ -1,0 +1,9 @@
+failure_label,training_before,training_after,removed
+Center,3462,3456,6
+Donut,409,409,0
+Edge-Loc,2417,2388,29
+Edge-Ring,8554,8546,8
+Loc,1620,1602,18
+Random,609,595,14
+Scratch,500,489,11
+Near-full,54,46,8

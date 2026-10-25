@@ -1,0 +1,1 @@
+{"source":"results/fgvc_aircraft_validation/class_reliability_residual/qwen2_5_7b_instruct/development/all_config_results.json","source_sha256":"ab1fc9d6204d046306aeb9491ba67d81064feb3d72b996bc2cc8455ed561006e","reselected_on_test":false,"frozen_selection":{"lambda":1.0,"rho":0.1},"created_utc":"2026-10-13T09:25:40.218203+00:00"}

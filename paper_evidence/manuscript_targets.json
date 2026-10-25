@@ -1,0 +1,218 @@
+{
+  "version": "v20_20261024",
+  "source_file": "docs/paper/revision_v20_JVCIR_20261024/english/sections/secondary_analysis_appendix.tex",
+  "source_sha256": "dcb9480925a246e4e192eefb92547d5e7830fd148299fc634593eea4db9d29fc",
+  "purpose": "Display targets only. All computed results must come from original task counts, coefficients or predictions, not these targets.",
+  "semantic_sources": {
+    "variant_name": {
+      "5": {
+        "mean_percent": 28.81,
+        "sample_sd_percent": 0.81
+      },
+      "10": {
+        "mean_percent": 35.26,
+        "sample_sd_percent": 0.67
+      }
+    },
+    "hierarchy_deterministic": {
+      "5": {
+        "mean_percent": 29.57,
+        "sample_sd_percent": 0.69
+      },
+      "10": {
+        "mean_percent": 35.72,
+        "sample_sd_percent": 0.69
+      }
+    },
+    "qwen2_5_7b_instruct": {
+      "5": {
+        "mean_percent": 29.52,
+        "sample_sd_percent": 0.66
+      },
+      "10": {
+        "mean_percent": 35.55,
+        "sample_sd_percent": 0.79
+      }
+    }
+  },
+  "weights": [
+    {
+      "shot": 5,
+      "class_name": "Center",
+      "mean": 0.3165,
+      "sample_sd": 0.2479,
+      "nonzero_tasks": 8
+    },
+    {
+      "shot": 5,
+      "class_name": "Donut",
+      "mean": 0.1375,
+      "sample_sd": 0.2039,
+      "nonzero_tasks": 5
+    },
+    {
+      "shot": 5,
+      "class_name": "Edge-Loc",
+      "mean": 0.2487,
+      "sample_sd": 0.2988,
+      "nonzero_tasks": 6
+    },
+    {
+      "shot": 5,
+      "class_name": "Edge-Ring",
+      "mean": 0.2484,
+      "sample_sd": 0.2557,
+      "nonzero_tasks": 8
+    },
+    {
+      "shot": 5,
+      "class_name": "Loc",
+      "mean": 0.2942,
+      "sample_sd": 0.2706,
+      "nonzero_tasks": 7
+    },
+    {
+      "shot": 5,
+      "class_name": "Random",
+      "mean": 0.0,
+      "sample_sd": 0.0,
+      "nonzero_tasks": 0
+    },
+    {
+      "shot": 5,
+      "class_name": "Scratch",
+      "mean": 0.5797,
+      "sample_sd": 0.3858,
+      "nonzero_tasks": 8
+    },
+    {
+      "shot": 5,
+      "class_name": "Near-full",
+      "mean": 0.0,
+      "sample_sd": 0.0,
+      "nonzero_tasks": 0
+    },
+    {
+      "shot": 10,
+      "class_name": "Center",
+      "mean": 0.1763,
+      "sample_sd": 0.2221,
+      "nonzero_tasks": 6
+    },
+    {
+      "shot": 10,
+      "class_name": "Donut",
+      "mean": 0.0848,
+      "sample_sd": 0.1513,
+      "nonzero_tasks": 4
+    },
+    {
+      "shot": 10,
+      "class_name": "Edge-Loc",
+      "mean": 0.0343,
+      "sample_sd": 0.0788,
+      "nonzero_tasks": 3
+    },
+    {
+      "shot": 10,
+      "class_name": "Edge-Ring",
+      "mean": 0.2207,
+      "sample_sd": 0.3033,
+      "nonzero_tasks": 5
+    },
+    {
+      "shot": 10,
+      "class_name": "Loc",
+      "mean": 0.1649,
+      "sample_sd": 0.2029,
+      "nonzero_tasks": 5
+    },
+    {
+      "shot": 10,
+      "class_name": "Random",
+      "mean": 0.0059,
+      "sample_sd": 0.0187,
+      "nonzero_tasks": 1
+    },
+    {
+      "shot": 10,
+      "class_name": "Scratch",
+      "mean": 0.3586,
+      "sample_sd": 0.3763,
+      "nonzero_tasks": 6
+    },
+    {
+      "shot": 10,
+      "class_name": "Near-full",
+      "mean": 0.0,
+      "sample_sd": 0.0,
+      "nonzero_tasks": 0
+    }
+  ],
+  "activation": [
+    {
+      "dataset": "WM Structured",
+      "shot": 5,
+      "enabled": 9,
+      "declines": 1,
+      "minimum_delta_pp": -0.619,
+      "false_rejections": 1,
+      "avoided_declines": 0,
+      "maximum_missed_pp": 1.559
+    },
+    {
+      "dataset": "WM Structured",
+      "shot": 10,
+      "enabled": 6,
+      "declines": 0,
+      "minimum_delta_pp": 0.0,
+      "false_rejections": 4,
+      "avoided_declines": 0,
+      "maximum_missed_pp": 4.493
+    },
+    {
+      "dataset": "WM Qwen",
+      "shot": 5,
+      "enabled": 6,
+      "declines": 3,
+      "minimum_delta_pp": -4.468,
+      "false_rejections": 3,
+      "avoided_declines": 1,
+      "maximum_missed_pp": 2.505
+    },
+    {
+      "dataset": "WM Qwen",
+      "shot": 10,
+      "enabled": 7,
+      "declines": 1,
+      "minimum_delta_pp": -0.4,
+      "false_rejections": 2,
+      "avoided_declines": 1,
+      "maximum_missed_pp": 0.796
+    },
+    {
+      "dataset": "FGVC Hybrid",
+      "shot": 5,
+      "enabled": 10,
+      "declines": 0,
+      "minimum_delta_pp": 0.766,
+      "false_rejections": 0,
+      "avoided_declines": 0,
+      "maximum_missed_pp": 0.0
+    },
+    {
+      "dataset": "FGVC Hybrid",
+      "shot": 10,
+      "enabled": 10,
+      "declines": 0,
+      "minimum_delta_pp": 0.116,
+      "false_rejections": 0,
+      "avoided_declines": 0,
+      "maximum_missed_pp": 0.0
+    }
+  ],
+  "conflict_exclusion_mean_percent": {
+    "5": 40.018,
+    "10": 44.004
+  }
+}
