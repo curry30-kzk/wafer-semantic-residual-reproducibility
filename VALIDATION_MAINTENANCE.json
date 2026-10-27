@@ -1,5 +1,5 @@
 {
-  "release": "v1.2.1",
+  "release": "v1.2.2",
   "date": "2026-10-27",
   "all_executed_checks_passed": true,
   "checks": [
@@ -42,6 +42,10 @@
       "name": "four_statistical_figures",
       "exit_code": 0,
       "seconds": 29.44
+    },
+    {
+      "name": "cff_transport_regression_and_all_28_unit_tests",
+      "exit_code": 0
     }
   ],
   "relative_markdown_links_checked": 22,
@@ -51,7 +55,7 @@
     "global": 3128
   },
   "supporting_evidence_checks": 174,
-  "unit_tests": 27,
+  "unit_tests": 28,
   "statistical_figures_rendered": [
     "2",
     "3",
@@ -65,5 +69,7 @@
   "prior_60_task_cache_validation": "VALIDATION_SUMMARY.json, v1.2.0",
   "original_image_training_repeated": false,
   "environment": "Existing Python 3.11.7 verification environment; not a fresh clean installation",
-  "rights_changed": false
+  "rights_changed": false,
+  "cff_crlf_regression_verified": true,
+  "windows_cff_transport_fix": "Accept exact declared LF/CRLF CFF text identities; content changes still fail."
 }

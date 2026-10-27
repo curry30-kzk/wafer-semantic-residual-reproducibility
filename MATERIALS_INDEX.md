@@ -4,7 +4,7 @@
 
 - Current manuscript at preparation: JVCIR v34, English and Chinese, 27 October 2026.
 - Materials v1.2.0: the frozen source/evidence snapshot originally cited by v34.
-- Materials v1.2.1: the same scientific records with the Figure 2 legend corrected
+- Materials v1.2.2: the same scientific records with the Figure 2 legend corrected
   to `Visual anchor`, clearer navigation, citation metadata, and deduplicated receipts.
 - The materials update does not change experiments or restore WM Test independence.
 

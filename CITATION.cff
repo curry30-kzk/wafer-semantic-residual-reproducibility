@@ -6,10 +6,10 @@ title: "Support-driven classwise semantic residual adaptation: reproduction mate
 # This entry does not assert a personal legal identity or assign all paper authors.
 authors:
   - name: "curry30-kzk"
-version: "v1.2.1"
+version: "v1.2.2"
 date-released: "2026-10-27"
 repository-code: "https://github.com/curry30-kzk/wafer-semantic-residual-reproducibility"
-url: "https://github.com/curry30-kzk/wafer-semantic-residual-reproducibility/releases/tag/v1.2.1"
+url: "https://github.com/curry30-kzk/wafer-semantic-residual-reproducibility/releases/tag/v1.2.2"
 abstract: "Frozen inputs, task records, source code and verified replay entry points for classwise semantic residual adaptation. Original provider images and third-party model weights are obtained separately."
 keywords:
   - "few-shot classification"

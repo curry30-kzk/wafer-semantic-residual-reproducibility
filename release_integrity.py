@@ -9,7 +9,7 @@ import argparse
 import hashlib
 import json
 
-TEXT_SUFFIXES = {'.json', '.csv', '.md', '.txt', '.py', '.bib', '.tex', '.yml', '.yaml'}
+TEXT_SUFFIXES = {'.json', '.csv', '.md', '.txt', '.py', '.bib', '.tex', '.yml', '.yaml', '.cff'}
 
 
 def checked_path(root, name):

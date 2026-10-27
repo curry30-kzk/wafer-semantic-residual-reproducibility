@@ -45,6 +45,16 @@ class ReleaseIntegrity(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'path'):
                 verify(Path(folder), [self.row('../secret.txt', b'private')])
 
+    def test_citation_cff_crlf_transport_matches_declared_identity(self):
+        verify = self.verifier()
+        payload = b'cff-version: 1.2.0\nmessage: Please cite this version.\n'
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root / 'CITATION.cff').write_bytes(payload.replace(b'\n', b'\r\n'))
+            result = verify(root, [self.row('CITATION.cff', payload)])
+            self.assertTrue(result['all_passed'])
+            self.assertEqual(result['line_ending_transports'], ['CITATION.cff'])
+
     def test_required_cache_absence_is_not_reported_as_success(self):
         verify = self.verifier()
         with tempfile.TemporaryDirectory() as folder:

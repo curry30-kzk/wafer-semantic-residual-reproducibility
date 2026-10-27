@@ -1,6 +1,6 @@
 # Evidence and reproduction map (historical v20 paths)
 
-These scientific outputs are retained in manuscript v34. Material version v1.2.1 preserves the historical paths used by the portable entry points.
+These scientific outputs are retained in manuscript v34. Material version v1.2.2 preserves the historical paths used by the portable entry points.
 The English/Chinese manuscript retains its necessary appendices. These files are data/code, not a replacement supplementary manuscript PDF.
 
 | Output | Evidence and actual entrypoint |

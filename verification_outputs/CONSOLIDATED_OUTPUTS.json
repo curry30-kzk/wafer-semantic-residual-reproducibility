@@ -1,5 +1,5 @@
 {
-  "release": "v1.2.1",
+  "release": "v1.2.2",
   "policy": "Exact duplicates only; authoritative results and historical freeze records are retained.",
   "previous_release": "https://github.com/curry30-kzk/wafer-semantic-residual-reproducibility/tree/v1.2.0",
   "aliases": [

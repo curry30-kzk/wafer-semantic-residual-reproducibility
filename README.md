@@ -2,14 +2,14 @@
 
 ## Reproduction materials for the final JVCIR manuscript
 
-Version **v1.2.1** (27 October 2026) is a maintenance update of v1.2.0 for
+Version **v1.2.2** (27 October 2026) is a maintenance update of v1.2.0 for
 the final manuscript v34. The scientific inputs, algorithms and numerical results
 are unchanged. It synchronizes the Figure 2 legend, improves navigation and
 citation metadata, and consolidates identical verification copies.
 
 The manuscript version and the materials version are different identifiers.
 Manuscript v34 cites the preserved v1.2.0 snapshot; a subsequent access-metadata
-update can cite v1.2.1 without changing the scientific text. Historical v1.1.1
+update can cite v1.2.2 without changing the scientific text. Historical v1.1.1
 and v1.2.0 tags and assets remain available.
 
 Start with [the materials index](MATERIALS_INDEX.md), which maps tasks, inputs
@@ -112,7 +112,7 @@ original algorithm; historical preparation receipts are evidence, not a new imag
 
 ### Release assets and tested environment
 
-Download `Supplementary_Data_S1.zip` from the [v1.2.1 release](https://github.com/curry30-kzk/wafer-semantic-residual-reproducibility/releases/tag/v1.2.1).
+Download `Supplementary_Data_S1.zip` from the [v1.2.2 release](https://github.com/curry30-kzk/wafer-semantic-residual-reproducibility/releases/tag/v1.2.2).
 For cache-level fitting, use the unchanged [Reproduction_Caches_S2.zip from
 v1.2.0](https://github.com/curry30-kzk/wafer-semantic-residual-reproducibility/releases/download/v1.2.0/Reproduction_Caches_S2.zip).
 Extract S1 first, then overlay the 310 S2 files. The new release reuses this fixed
@@ -122,7 +122,7 @@ The cache archive alone is not executable. The Git checkout contains the source/
 evidence tree and the full release manifest but excludes these optional caches.
 No archive download is needed for saved-statistics recalculation.
 
-VALIDATION_MAINTENANCE.json records the checks performed for v1.2.1.
+VALIDATION_MAINTENANCE.json records the checks performed for v1.2.2.
 VALIDATION_SUMMARY.json retains the v1.2.0 checks and its CPU
 environment. requirements_tested_statistics.txt and
 requirements_tested_cache_figures.txt record tested package versions separately

@@ -1,14 +1,14 @@
 {
   "schema": "public_reproduction_release_v1",
-  "release_version": "v1.2.1",
+  "release_version": "v1.2.2",
   "historical_base": "v1.1.1",
   "historical_commit": "c13b42f8534ae7fd2133e43a37143fae82ef4264",
   "identity_policy": "public_sha256 checks current exported content. original_sha256 is a distinct historical identity. No old protocol hash is edited or treated as matching redacted bytes.",
   "no_raw_images_or_model_weights": true,
   "scientific_results_changed": false,
-  "previous_release": "v1.2.0",
-  "previous_public_manifest_sha256": "f2a73239d03176058a3a46ad388e3fd8ae308b9ba059fa61644307f7424d2db9",
-  "previous_source_commit": "21ca2f27aeaae28abca94e89bcc8fc0c0d9b9569",
+  "previous_release": "v1.2.1",
+  "previous_public_manifest_sha256": "15d1d588b5f97de98434bc83b1543ab1171e549a2d0da0357530d755fbb472d5",
+  "previous_source_commit": "26e0a8379016c81770d4beeffe36affda3169023",
   "optional_cache_download": "https://github.com/curry30-kzk/wafer-semantic-residual-reproducibility/releases/download/v1.2.0/Reproduction_Caches_S2.zip",
   "cache_contents_changed": false,
   "files": [
@@ -24,16 +24,18 @@
     {
       "path": "CACHE_ARCHIVE_README.md",
       "group": "evidence",
-      "public_sha256": "949810b13a47f5fa8023e8d30e0f5bbc1195265c4bb99a7e1b18e4fc4165e0a7",
+      "public_sha256": "a5b2b2506ab4ca7e95222923e896b51c44ceb640d867bf7f9b80cd2760aa7689",
       "public_bytes": 744,
-      "previous_public_sha256": "848abf31b37969e0fd998ebfe1b46162e2885b08f1b44b8ab4848e45c6b73f9a",
-      "maintenance_change": "Non-scientific maintenance; prior release and original freeze identities retained"
+      "previous_public_sha256": "949810b13a47f5fa8023e8d30e0f5bbc1195265c4bb99a7e1b18e4fc4165e0a7",
+      "maintenance_change": "Non-scientific metadata or CFF text-transport compatibility; historical identities retained"
     },
     {
       "path": "CITATION.cff",
       "group": "evidence",
-      "public_sha256": "cc7fb74c20f357892c92b4febc2bd84ecbba429ea2ef241f14d193fd6b8a0a8f",
-      "public_bytes": 952
+      "public_sha256": "d74e635879d0c96c6416fa3b635b5b542b5a68d2cbf116a21400899d796b4d0c",
+      "public_bytes": 952,
+      "previous_public_sha256": "cc7fb74c20f357892c92b4febc2bd84ecbba429ea2ef241f14d193fd6b8a0a8f",
+      "maintenance_change": "Non-scientific metadata or CFF text-transport compatibility; historical identities retained"
     },
     {
       "path": "EXPORT_PROVENANCE.json",
@@ -44,14 +46,18 @@
     {
       "path": "MAINTENANCE_NOTES.md",
       "group": "evidence",
-      "public_sha256": "16a38d3723d3d06daa71f48baec04f11ce23a253126055220b93fc78d081165e",
-      "public_bytes": 1187
+      "public_sha256": "6c4c93a4fdc5d1f254ddbe41e63d23f2a7cf8734accb277be1af1a4f5b18ff1c",
+      "public_bytes": 1449,
+      "previous_public_sha256": "16a38d3723d3d06daa71f48baec04f11ce23a253126055220b93fc78d081165e",
+      "maintenance_change": "Non-scientific metadata or CFF text-transport compatibility; historical identities retained"
     },
     {
       "path": "MATERIALS_INDEX.md",
       "group": "evidence",
-      "public_sha256": "1db743a128237055607806c76042a0381bb4fe0ca0439719350a8a69c021b3ae",
-      "public_bytes": 2319
+      "public_sha256": "0af59d20bb3fc72f5ddb8d7b9765fbc6ddfb7988c02204bc6b271c3447c60fcb",
+      "public_bytes": 2319,
+      "previous_public_sha256": "1db743a128237055607806c76042a0381bb4fe0ca0439719350a8a69c021b3ae",
+      "maintenance_change": "Non-scientific metadata or CFF text-transport compatibility; historical identities retained"
     },
     {
       "path": "PUBLIC_AUDIT.json",
@@ -68,13 +74,13 @@
     {
       "path": "README.md",
       "group": "evidence",
-      "public_sha256": "e4f32a0412de87202a6fd434259f41f0e5aa4c463a3280bd18be203dbc2aa511",
+      "public_sha256": "020362a4400ec604dcd6cddbb4f33028f6af3ae1c7ac9830f3145b9660195794",
       "public_bytes": 6997,
       "original_sha256": "82622f7897c0d666fd47edd5cdf26e6e0690ed15b925ae55e4f8ef8c8759ba21",
       "source_path": "README.md",
       "transformation": "Original local source identity recorded separately from current public export",
-      "previous_public_sha256": "de190704b81a986a7468024438b9173d32c36af8882b17ad6c4d0d34d9d2ae48",
-      "maintenance_change": "Non-scientific maintenance; prior release and original freeze identities retained"
+      "previous_public_sha256": "e4f32a0412de87202a6fd434259f41f0e5aa4c463a3280bd18be203dbc2aa511",
+      "maintenance_change": "Non-scientific metadata or CFF text-transport compatibility; historical identities retained"
     },
     {
       "path": "RIGHTS.md",
@@ -85,8 +91,10 @@
     {
       "path": "VALIDATION_MAINTENANCE.json",
       "group": "evidence",
-      "public_sha256": "2aa0a7fcf5910039c954ddcd055193afb1a79a5282e82a0fa7fb283518406f9b",
-      "public_bytes": 1624
+      "public_sha256": "4ed174c5c3f4cb7380f584000be15557c18a9228bbac8e814f6ca5330a7ecb18",
+      "public_bytes": 1881,
+      "previous_public_sha256": "2aa0a7fcf5910039c954ddcd055193afb1a79a5282e82a0fa7fb283518406f9b",
+      "maintenance_change": "Non-scientific metadata or CFF text-transport compatibility; historical identities retained"
     },
     {
       "path": "VALIDATION_SUMMARY.json",
@@ -1248,10 +1256,10 @@
     {
       "path": "docs/manuscript_v20/artifact_map.md",
       "group": "evidence",
-      "public_sha256": "8c23c2229a75ef38bfc0f556812006f051c30270103582ec7f0282f1b190dc70",
+      "public_sha256": "698a5005993ca9c533583930a33f5087745fe2a4b1f7b2482cf86c58c1cf81fe",
       "public_bytes": 4079,
-      "previous_public_sha256": "0065bfeaaecb326f6de6f7006a570e495f992684c513451c636265eab6d1ba33",
-      "maintenance_change": "Non-scientific maintenance; prior release and original freeze identities retained"
+      "previous_public_sha256": "8c23c2229a75ef38bfc0f556812006f051c30270103582ec7f0282f1b190dc70",
+      "maintenance_change": "Non-scientific metadata or CFF text-transport compatibility; historical identities retained"
     },
     {
       "path": "docs/paper/revision_v11_20261017/global_control/recompute_control.py",
@@ -1702,8 +1710,10 @@
     {
       "path": "release_integrity.py",
       "group": "evidence",
-      "public_sha256": "383fc1a6f1bfe9dd85a9a9d47eade083584fbc292fabdf4838bf4b9e01741e37",
-      "public_bytes": 3387
+      "public_sha256": "a25ba9f168cbf3a85197a56e38bca79181005413f26fc12ad03054001eb748a9",
+      "public_bytes": 3395,
+      "previous_public_sha256": "383fc1a6f1bfe9dd85a9a9d47eade083584fbc292fabdf4838bf4b9e01741e37",
+      "maintenance_change": "Non-scientific metadata or CFF text-transport compatibility; historical identities retained"
     },
     {
       "path": "replay_all.py",
@@ -27642,8 +27652,10 @@
     {
       "path": "tests/test_release_integrity.py",
       "group": "evidence",
-      "public_sha256": "af1480c7b6c1964036bb6e31553559efd67775ae6850925979b8a29cb43a8f51",
-      "public_bytes": 2883
+      "public_sha256": "e2bb45505d17d4d8d57e5a365328e3073eebe4c7824371be2566b00f14a15efe",
+      "public_bytes": 3438,
+      "previous_public_sha256": "af1480c7b6c1964036bb6e31553559efd67775ae6850925979b8a29cb43a8f51",
+      "maintenance_change": "Non-scientific metadata or CFF text-transport compatibility; historical identities retained"
     },
     {
       "path": "tests/test_replay_entrypoint.py",
@@ -27669,8 +27681,10 @@
     {
       "path": "verification_outputs/CONSOLIDATED_OUTPUTS.json",
       "group": "evidence",
-      "public_sha256": "54615c105a5c227375f92b030dcf750e160eb9e008a539906e998d4d3913f819",
-      "public_bytes": 4806
+      "public_sha256": "6302d00b996e532fcc29f03885c796357ff8bc6208d52710c5726233ad194dc9",
+      "public_bytes": 4806,
+      "previous_public_sha256": "54615c105a5c227375f92b030dcf750e160eb9e008a539906e998d4d3913f819",
+      "maintenance_change": "Non-scientific metadata or CFF text-transport compatibility; historical identities retained"
     },
     {
       "path": "verification_outputs/README.md",
