@@ -24,8 +24,10 @@
     {
       "path": "CACHE_ARCHIVE_README.md",
       "group": "evidence",
-      "public_sha256": "848abf31b37969e0fd998ebfe1b46162e2885b08f1b44b8ab4848e45c6b73f9a",
-      "public_bytes": 593
+      "public_sha256": "949810b13a47f5fa8023e8d30e0f5bbc1195265c4bb99a7e1b18e4fc4165e0a7",
+      "public_bytes": 744,
+      "previous_public_sha256": "848abf31b37969e0fd998ebfe1b46162e2885b08f1b44b8ab4848e45c6b73f9a",
+      "maintenance_change": "Non-scientific maintenance; prior release and original freeze identities retained"
     },
     {
       "path": "CITATION.cff",
@@ -1246,8 +1248,8 @@
     {
       "path": "docs/manuscript_v20/artifact_map.md",
       "group": "evidence",
-      "public_sha256": "0a827e76a2e1057a0a6f42efafc74bdfd072321ebfdd0e58d0b7c5972854fad1",
-      "public_bytes": 4049,
+      "public_sha256": "8c23c2229a75ef38bfc0f556812006f051c30270103582ec7f0282f1b190dc70",
+      "public_bytes": 4079,
       "previous_public_sha256": "0065bfeaaecb326f6de6f7006a570e495f992684c513451c636265eab6d1ba33",
       "maintenance_change": "Non-scientific maintenance; prior release and original freeze identities retained"
     },
@@ -1305,8 +1307,8 @@
     {
       "path": "docs/paper/revision_v20_20261024/figure_source/draw_results.py",
       "group": "evidence",
-      "public_sha256": "1b2738423f792e55767bc80fbcee6ccc67fcaa14f00c09d012d6822ecf30aa3a",
-      "public_bytes": 17433,
+      "public_sha256": "f4c1e2b39cef49ba4c444df49f935265ace248a3f6270a500d268aa579a22f2a",
+      "public_bytes": 17648,
       "previous_public_sha256": "36a2305409328b21a88cce250c176cb46aa42587b0314824bbba4a844e7d0cd0",
       "maintenance_change": "Non-scientific maintenance; prior release and original freeze identities retained"
     },
