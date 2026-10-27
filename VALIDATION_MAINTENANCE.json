@@ -1,0 +1,69 @@
+{
+  "release": "v1.2.1",
+  "date": "2026-10-27",
+  "all_executed_checks_passed": true,
+  "checks": [
+    {
+      "name": "integrity_unit_tests",
+      "exit_code": 0,
+      "seconds": 8.44
+    },
+    {
+      "name": "original_unit_tests",
+      "exit_code": 0,
+      "seconds": 3.31
+    },
+    {
+      "name": "clap_unit_tests",
+      "exit_code": 0,
+      "seconds": 1.45
+    },
+    {
+      "name": "global_unit_tests",
+      "exit_code": 0,
+      "seconds": 0.31
+    },
+    {
+      "name": "public_integrity",
+      "exit_code": 0,
+      "seconds": 11.98
+    },
+    {
+      "name": "saved_statistics",
+      "exit_code": 0,
+      "seconds": 7.0
+    },
+    {
+      "name": "supporting_evidence",
+      "exit_code": 0,
+      "seconds": 13.89
+    },
+    {
+      "name": "four_statistical_figures",
+      "exit_code": 0,
+      "seconds": 29.44
+    }
+  ],
+  "relative_markdown_links_checked": 22,
+  "saved_numeric_checks": {
+    "main": 222,
+    "clap": 400,
+    "global": 3128
+  },
+  "supporting_evidence_checks": 174,
+  "unit_tests": 27,
+  "statistical_figures_rendered": [
+    "2",
+    "3",
+    "5",
+    "C.1"
+  ],
+  "figure2_legend": "Visual anchor",
+  "scientific_inputs_results_and_original_identities_changed": false,
+  "cache_asset_changed": false,
+  "cache_refitting_repeated_in_this_maintenance": false,
+  "prior_60_task_cache_validation": "VALIDATION_SUMMARY.json, v1.2.0",
+  "original_image_training_repeated": false,
+  "environment": "Existing Python 3.11.7 verification environment; not a fresh clean installation",
+  "rights_changed": false
+}

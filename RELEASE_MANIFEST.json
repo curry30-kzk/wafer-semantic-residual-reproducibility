@@ -1,11 +1,16 @@
 {
   "schema": "public_reproduction_release_v1",
-  "release_version": "v1.2.0",
+  "release_version": "v1.2.1",
   "historical_base": "v1.1.1",
   "historical_commit": "c13b42f8534ae7fd2133e43a37143fae82ef4264",
   "identity_policy": "public_sha256 checks current exported content. original_sha256 is a distinct historical identity. No old protocol hash is edited or treated as matching redacted bytes.",
   "no_raw_images_or_model_weights": true,
   "scientific_results_changed": false,
+  "previous_release": "v1.2.0",
+  "previous_public_manifest_sha256": "f2a73239d03176058a3a46ad388e3fd8ae308b9ba059fa61644307f7424d2db9",
+  "previous_source_commit": "21ca2f27aeaae28abca94e89bcc8fc0c0d9b9569",
+  "optional_cache_download": "https://github.com/curry30-kzk/wafer-semantic-residual-reproducibility/releases/download/v1.2.0/Reproduction_Caches_S2.zip",
+  "cache_contents_changed": false,
   "files": [
     {
       "path": ".gitignore",
@@ -15,6 +20,77 @@
       "original_sha256": "4a43334830bf96877f897f8eb33fb947db1ae9b06a0b78f6e4757b11c064b1bc",
       "source_path": ".gitignore",
       "transformation": "Original local source identity recorded separately from current public export"
+    },
+    {
+      "path": "CACHE_ARCHIVE_README.md",
+      "group": "evidence",
+      "public_sha256": "848abf31b37969e0fd998ebfe1b46162e2885b08f1b44b8ab4848e45c6b73f9a",
+      "public_bytes": 593
+    },
+    {
+      "path": "CITATION.cff",
+      "group": "evidence",
+      "public_sha256": "cc7fb74c20f357892c92b4febc2bd84ecbba429ea2ef241f14d193fd6b8a0a8f",
+      "public_bytes": 952
+    },
+    {
+      "path": "EXPORT_PROVENANCE.json",
+      "group": "evidence",
+      "public_sha256": "33ab610b313362660d2d12c7927cca5b13a727d726b33674cd1fd956abc044ef",
+      "public_bytes": 647656
+    },
+    {
+      "path": "MAINTENANCE_NOTES.md",
+      "group": "evidence",
+      "public_sha256": "16a38d3723d3d06daa71f48baec04f11ce23a253126055220b93fc78d081165e",
+      "public_bytes": 1187
+    },
+    {
+      "path": "MATERIALS_INDEX.md",
+      "group": "evidence",
+      "public_sha256": "1db743a128237055607806c76042a0381bb4fe0ca0439719350a8a69c021b3ae",
+      "public_bytes": 2319
+    },
+    {
+      "path": "PUBLIC_AUDIT.json",
+      "group": "evidence",
+      "public_sha256": "74a172afdc5de07e8feb5a5b51a55fbffe10f439e99180c40549a7e22f5983bb",
+      "public_bytes": 297
+    },
+    {
+      "path": "PUBLIC_MANIFEST.json",
+      "group": "evidence",
+      "public_sha256": "92f7bf5d089e5cf567a655b68f2d6448e21fc4347c0e39ee33660220a841f68c",
+      "public_bytes": 300
+    },
+    {
+      "path": "README.md",
+      "group": "evidence",
+      "public_sha256": "e4f32a0412de87202a6fd434259f41f0e5aa4c463a3280bd18be203dbc2aa511",
+      "public_bytes": 6997,
+      "original_sha256": "82622f7897c0d666fd47edd5cdf26e6e0690ed15b925ae55e4f8ef8c8759ba21",
+      "source_path": "README.md",
+      "transformation": "Original local source identity recorded separately from current public export",
+      "previous_public_sha256": "de190704b81a986a7468024438b9173d32c36af8882b17ad6c4d0d34d9d2ae48",
+      "maintenance_change": "Non-scientific maintenance; prior release and original freeze identities retained"
+    },
+    {
+      "path": "RIGHTS.md",
+      "group": "evidence",
+      "public_sha256": "1f8880a917424f4e54bbf48ea078bc587fc242dad12068336685a1940a7cea8c",
+      "public_bytes": 2417
+    },
+    {
+      "path": "VALIDATION_MAINTENANCE.json",
+      "group": "evidence",
+      "public_sha256": "2aa0a7fcf5910039c954ddcd055193afb1a79a5282e82a0fa7fb283518406f9b",
+      "public_bytes": 1624
+    },
+    {
+      "path": "VALIDATION_SUMMARY.json",
+      "group": "evidence",
+      "public_sha256": "1985cef53038fc563472268c2522071a080e493f9a747da479dc821ce78c71f7",
+      "public_bytes": 1951
     },
     {
       "path": "archive/v1_1_1/PUBLIC_AUDIT.json",
@@ -33,12 +109,6 @@
       "group": "evidence",
       "public_sha256": "6d059fc3ed4b1d3a42e3b1f29b517d02f3eb736a9ae2b332cdcc3d2fe66b3cee",
       "public_bytes": 4424
-    },
-    {
-      "path": "CACHE_ARCHIVE_README.md",
-      "group": "evidence",
-      "public_sha256": "848abf31b37969e0fd998ebfe1b46162e2885b08f1b44b8ab4848e45c6b73f9a",
-      "public_bytes": 593
     },
     {
       "path": "configs/fgvc_aircraft_clap_frozen_v1.json",
@@ -1120,6 +1190,18 @@
       "transformation": "Retained public v1.1.1 bytes or new release code; original freeze SHA is provenance only"
     },
     {
+      "path": "docs/manuscript_v19/README.md",
+      "group": "evidence",
+      "public_sha256": "75e6b157574620011c062d3c688faffc5dd3451ac099cbe440974acdacc8368e",
+      "public_bytes": 2557
+    },
+    {
+      "path": "docs/manuscript_v19/VALIDATION.json",
+      "group": "evidence",
+      "public_sha256": "73ab6372914e8e448710398c1360767ff2e1ab020820fb315c13ecd056f81d5d",
+      "public_bytes": 3505
+    },
+    {
       "path": "docs/manuscript_v19/configuration.md",
       "group": "evidence",
       "public_sha256": "585744068ae184f300b2a39213153f47fb3130c99c1758125f98fd15df5322a4",
@@ -1136,12 +1218,6 @@
       "group": "evidence",
       "public_sha256": "41cd4d31fca63417108347ba06cacb2470d522829abcfcb29e5a6103160f6db5",
       "public_bytes": 2244
-    },
-    {
-      "path": "docs/manuscript_v19/README.md",
-      "group": "evidence",
-      "public_sha256": "75e6b157574620011c062d3c688faffc5dd3451ac099cbe440974acdacc8368e",
-      "public_bytes": 2557
     },
     {
       "path": "docs/manuscript_v19/replay_portable.py",
@@ -1162,22 +1238,18 @@
       "public_bytes": 12064
     },
     {
-      "path": "docs/manuscript_v19/VALIDATION.json",
-      "group": "evidence",
-      "public_sha256": "73ab6372914e8e448710398c1360767ff2e1ab020820fb315c13ecd056f81d5d",
-      "public_bytes": 3505
-    },
-    {
-      "path": "docs/manuscript_v20/artifact_map.md",
-      "group": "evidence",
-      "public_sha256": "0065bfeaaecb326f6de6f7006a570e495f992684c513451c636265eab6d1ba33",
-      "public_bytes": 4038
-    },
-    {
       "path": "docs/manuscript_v20/README.md",
       "group": "evidence",
       "public_sha256": "497d3edab2dcae93af8737df048c10ffe113e2671662a575ab29c40aed4f317c",
       "public_bytes": 399
+    },
+    {
+      "path": "docs/manuscript_v20/artifact_map.md",
+      "group": "evidence",
+      "public_sha256": "0a827e76a2e1057a0a6f42efafc74bdfd072321ebfdd0e58d0b7c5972854fad1",
+      "public_bytes": 4049,
+      "previous_public_sha256": "0065bfeaaecb326f6de6f7006a570e495f992684c513451c636265eab6d1ba33",
+      "maintenance_change": "Non-scientific maintenance; prior release and original freeze identities retained"
     },
     {
       "path": "docs/paper/revision_v11_20261017/global_control/recompute_control.py",
@@ -1233,8 +1305,10 @@
     {
       "path": "docs/paper/revision_v20_20261024/figure_source/draw_results.py",
       "group": "evidence",
-      "public_sha256": "36a2305409328b21a88cce250c176cb46aa42587b0314824bbba4a844e7d0cd0",
-      "public_bytes": 17652
+      "public_sha256": "1b2738423f792e55767bc80fbcee6ccc67fcaa14f00c09d012d6822ecf30aa3a",
+      "public_bytes": 17433,
+      "previous_public_sha256": "36a2305409328b21a88cce250c176cb46aa42587b0314824bbba4a844e7d0cd0",
+      "maintenance_change": "Non-scientific maintenance; prior release and original freeze identities retained"
     },
     {
       "path": "docs/paper/revision_v20_20261024/figure_source/draw_validation_sensitivity_english.py",
@@ -1403,6 +1477,15 @@
       "transformation": "Original local source identity recorded separately from current public export"
     },
     {
+      "path": "docs/paper/revision_v9_20261015/bridge/reference/LICENSE",
+      "group": "evidence",
+      "public_sha256": "61cc363b4958705c3c4a5b510c10d5bbbe08cfe2854dc5720b828c2e1bf29807",
+      "public_bytes": 1079,
+      "original_sha256": "61cc363b4958705c3c4a5b510c10d5bbbe08cfe2854dc5720b828c2e1bf29807",
+      "source_path": "docs/paper/revision_v9_20261015/bridge/reference/LICENSE",
+      "transformation": "Original local source identity recorded separately from current public export"
+    },
+    {
       "path": "docs/paper/revision_v9_20261015/bridge/reference/configs/trainers/SGD_lr1e-1_B256_ep300.yaml",
       "group": "evidence",
       "public_sha256": "091c67a15365a130da6d3684a289046092275478d7aadd0103df9a9acd1f6c52",
@@ -1423,15 +1506,6 @@
       "source_path": "docs/paper/revision_v9_20261015/bridge/reference/experiments/experiment_CLAP.txt",
       "transformation": "byte-identical copy",
       "description": "Actual original frozen-control input; public identity recorded separately"
-    },
-    {
-      "path": "docs/paper/revision_v9_20261015/bridge/reference/LICENSE",
-      "group": "evidence",
-      "public_sha256": "61cc363b4958705c3c4a5b510c10d5bbbe08cfe2854dc5720b828c2e1bf29807",
-      "public_bytes": 1079,
-      "original_sha256": "61cc363b4958705c3c4a5b510c10d5bbbe08cfe2854dc5720b828c2e1bf29807",
-      "source_path": "docs/paper/revision_v9_20261015/bridge/reference/LICENSE",
-      "transformation": "Original local source identity recorded separately from current public export"
     },
     {
       "path": "docs/paper/revision_v9_20261015/bridge/reference/trainers/adapters.py",
@@ -1478,12 +1552,6 @@
       "public_bytes": 2606
     },
     {
-      "path": "EXPORT_PROVENANCE.json",
-      "group": "evidence",
-      "public_sha256": "33ab610b313362660d2d12c7927cca5b13a727d726b33674cd1fd956abc044ef",
-      "public_bytes": 647656
-    },
-    {
       "path": "generate_fgvc_aircraft_semantics.py",
       "group": "evidence",
       "public_sha256": "070faa375b85462e4dc58ea8246a19d4cacb07086fa381d2a3fb826494a85cb5",
@@ -1493,6 +1561,13 @@
       "source_path": "generate_fgvc_aircraft_semantics.py",
       "transformation": "byte-identical copy",
       "description": "Archived preparation/generation entrypoint; fixed semantic inputs are already provided"
+    },
+    {
+      "path": "paper_evidence/ORIGINAL_EXPORT_PROVENANCE.json",
+      "group": "evidence",
+      "public_sha256": "b364ec1cabcf87396876fc108cc1d3a73b5b18ae39c4898b3f3e9fd5a618ed01",
+      "public_bytes": 672684,
+      "description": "Explicit original/export identity map for every new source export"
     },
     {
       "path": "paper_evidence/conflict_query_exclusion.json",
@@ -1535,13 +1610,6 @@
       "group": "evidence",
       "public_sha256": "02dbcf9dcfcf4ebad6f70ea24d802795850eee2d3da425d190e8000fe1e453ce",
       "public_bytes": 4863
-    },
-    {
-      "path": "paper_evidence/ORIGINAL_EXPORT_PROVENANCE.json",
-      "group": "evidence",
-      "public_sha256": "b364ec1cabcf87396876fc108cc1d3a73b5b18ae39c4898b3f3e9fd5a618ed01",
-      "public_bytes": 672684,
-      "description": "Explicit original/export identity map for every new source export"
     },
     {
       "path": "paper_evidence/original_validation_grid_tasks.json",
@@ -1628,27 +1696,6 @@
       "source_path": "prepare_wm811k_v2.py",
       "transformation": "CLI default data path relocated; original preparation algorithm retained",
       "description": "Archived preparation/generation entrypoint; fixed semantic inputs are already provided"
-    },
-    {
-      "path": "PUBLIC_AUDIT.json",
-      "group": "evidence",
-      "public_sha256": "74a172afdc5de07e8feb5a5b51a55fbffe10f439e99180c40549a7e22f5983bb",
-      "public_bytes": 297
-    },
-    {
-      "path": "PUBLIC_MANIFEST.json",
-      "group": "evidence",
-      "public_sha256": "92f7bf5d089e5cf567a655b68f2d6448e21fc4347c0e39ee33660220a841f68c",
-      "public_bytes": 300
-    },
-    {
-      "path": "README.md",
-      "group": "evidence",
-      "public_sha256": "de190704b81a986a7468024438b9173d32c36af8882b17ad6c4d0d34d9d2ae48",
-      "public_bytes": 5698,
-      "original_sha256": "82622f7897c0d666fd47edd5cdf26e6e0690ed15b925ae55e4f8ef8c8759ba21",
-      "source_path": "README.md",
-      "transformation": "Original local source identity recorded separately from current public export"
     },
     {
       "path": "release_integrity.py",
@@ -27168,12 +27215,6 @@
       "transformation": "JSON compact serialization and absolute-path metadata redaction only; numerical values, labels and predictions retained"
     },
     {
-      "path": "RIGHTS.md",
-      "group": "evidence",
-      "public_sha256": "1f8880a917424f4e54bbf48ea078bc587fc242dad12068336685a1940a7cea8c",
-      "public_bytes": 2417
-    },
-    {
       "path": "run_class_reliability_residual.py",
       "group": "evidence",
       "public_sha256": "ad2d84c8439fc697ee8e4917877bcdf35df97ef00f6b86050be2bac412593c3a",
@@ -27624,58 +27665,22 @@
       "transformation": "Original local source identity recorded separately from current public export"
     },
     {
-      "path": "VALIDATION_SUMMARY.json",
+      "path": "verification_outputs/CONSOLIDATED_OUTPUTS.json",
       "group": "evidence",
-      "public_sha256": "1985cef53038fc563472268c2522071a080e493f9a747da479dc821ce78c71f7",
-      "public_bytes": 1951
+      "public_sha256": "54615c105a5c227375f92b030dcf750e160eb9e008a539906e998d4d3913f819",
+      "public_bytes": 4806
     },
     {
-      "path": "verification_outputs/clap/recompute_audit.json",
+      "path": "verification_outputs/README.md",
       "group": "evidence",
-      "public_sha256": "2b938dba64442f7d7f8685abee365f54bd7520f5240d77faad461fc3c5fa18c8",
-      "public_bytes": 498
-    },
-    {
-      "path": "verification_outputs/clap/seed_metrics_recomputed.csv",
-      "group": "evidence",
-      "public_sha256": "29e06157f50ab770b141cc623e998b0ac8e356f17bbcc85241da54fcd5cb00f7",
-      "public_bytes": 5793
-    },
-    {
-      "path": "verification_outputs/clap/summary_extended.csv",
-      "group": "evidence",
-      "public_sha256": "785026b050e85752d2b79702e7f8eb6567f122520d682b8ecc6bb5ac2266c79d",
-      "public_bytes": 1942
-    },
-    {
-      "path": "verification_outputs/clap/summary_extended.json",
-      "group": "evidence",
-      "public_sha256": "6537b07dcc18322073f93b0af212a043181bb699d3c35bdfb9c35b12d6712abc",
-      "public_bytes": 4490
+      "public_sha256": "f63a9e1ff3457e4c933b1b264fd32553002ab6015a7fe7023348f8f5ab823b67",
+      "public_bytes": 549
     },
     {
       "path": "verification_outputs/full_replay/clap/recompute_audit.json",
       "group": "evidence",
       "public_sha256": "2b938dba64442f7d7f8685abee365f54bd7520f5240d77faad461fc3c5fa18c8",
       "public_bytes": 498
-    },
-    {
-      "path": "verification_outputs/full_replay/clap/seed_metrics_recomputed.csv",
-      "group": "evidence",
-      "public_sha256": "29e06157f50ab770b141cc623e998b0ac8e356f17bbcc85241da54fcd5cb00f7",
-      "public_bytes": 5793
-    },
-    {
-      "path": "verification_outputs/full_replay/clap/summary_extended.csv",
-      "group": "evidence",
-      "public_sha256": "785026b050e85752d2b79702e7f8eb6567f122520d682b8ecc6bb5ac2266c79d",
-      "public_bytes": 1942
-    },
-    {
-      "path": "verification_outputs/full_replay/clap/summary_extended.json",
-      "group": "evidence",
-      "public_sha256": "6537b07dcc18322073f93b0af212a043181bb699d3c35bdfb9c35b12d6712abc",
-      "public_bytes": 4490
     },
     {
       "path": "verification_outputs/full_replay/clap_audit.json",
@@ -27754,60 +27759,6 @@
       "group": "evidence",
       "public_sha256": "ce8fbcff6e683484646bade01b1f021d528d32e304e7d69b5f820910748ec80a",
       "public_bytes": 1505
-    },
-    {
-      "path": "verification_outputs/original/ablation_table.csv",
-      "group": "evidence",
-      "public_sha256": "81924c5baa7b4252c1d9a621148f15b18c510f7791615885dff1736821f8a900",
-      "public_bytes": 6509
-    },
-    {
-      "path": "verification_outputs/original/all_summary_cells.csv",
-      "group": "evidence",
-      "public_sha256": "090799369bc0ffde2a53a304b78326a7db091aebfae53266a750b7274c08b62d",
-      "public_bytes": 16892
-    },
-    {
-      "path": "verification_outputs/original/main_table.csv",
-      "group": "evidence",
-      "public_sha256": "a8ff7068877371dfccec4ed318f64963011ccee7575e15668f25b2aaeba8b754",
-      "public_bytes": 5771
-    },
-    {
-      "path": "verification_outputs/original/paired_comparisons.csv",
-      "group": "evidence",
-      "public_sha256": "efc824cb66074824e00d59e07e3c3e7963edfd7f645a5c48d5793b771d4842b7",
-      "public_bytes": 25822
-    },
-    {
-      "path": "verification_outputs/original/per_seed.csv",
-      "group": "evidence",
-      "public_sha256": "5c9240230c1598f4cadbf48a55e0aab120b18ac95b2de15cb768e5dd5c40c86b",
-      "public_bytes": 99807
-    },
-    {
-      "path": "verification_outputs/original/same_text_control.csv",
-      "group": "evidence",
-      "public_sha256": "5f2580cf0b205db31f5e3b82c7858d829d95a6952a3d343a9759dc4aa79bce6a",
-      "public_bytes": 2016
-    },
-    {
-      "path": "verification_outputs/original/shared_text_control.csv",
-      "group": "evidence",
-      "public_sha256": "f2199d5ed5832c142aa2a53586a55c55cc0cc770a5111b7de28cf8e5716ba6f9",
-      "public_bytes": 3070
-    },
-    {
-      "path": "verification_outputs/original/statistics.json",
-      "group": "evidence",
-      "public_sha256": "e976ed8f19c54d6ec32f77164ca81ae05b30cf21d7516b7ab51cbeb12a73ea77",
-      "public_bytes": 303857
-    },
-    {
-      "path": "verification_outputs/original/verification.json",
-      "group": "evidence",
-      "public_sha256": "5aefa75b980db7c41e341edd125a83990fc37649b4484059eecbb099f06680e0",
-      "public_bytes": 70604
     },
     {
       "path": "verification_outputs/release_validation.json",

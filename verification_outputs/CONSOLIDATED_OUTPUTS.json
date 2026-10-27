@@ -1,0 +1,103 @@
+{
+  "release": "v1.2.1",
+  "policy": "Exact duplicates only; authoritative results and historical freeze records are retained.",
+  "previous_release": "https://github.com/curry30-kzk/wafer-semantic-residual-reproducibility/tree/v1.2.0",
+  "aliases": [
+    {
+      "removed_path": "verification_outputs/clap/seed_metrics_recomputed.csv",
+      "retained_path": "results/teacher_review_v9_20261015/clap_bridge/seed_metrics_recomputed.csv",
+      "sha256": "29e06157f50ab770b141cc623e998b0ac8e356f17bbcc85241da54fcd5cb00f7",
+      "bytes": 5793
+    },
+    {
+      "removed_path": "verification_outputs/full_replay/clap/seed_metrics_recomputed.csv",
+      "retained_path": "results/teacher_review_v9_20261015/clap_bridge/seed_metrics_recomputed.csv",
+      "sha256": "29e06157f50ab770b141cc623e998b0ac8e356f17bbcc85241da54fcd5cb00f7",
+      "bytes": 5793
+    },
+    {
+      "removed_path": "verification_outputs/clap/summary_extended.csv",
+      "retained_path": "results/teacher_review_v9_20261015/clap_bridge/summary_extended.csv",
+      "sha256": "785026b050e85752d2b79702e7f8eb6567f122520d682b8ecc6bb5ac2266c79d",
+      "bytes": 1942
+    },
+    {
+      "removed_path": "verification_outputs/full_replay/clap/summary_extended.csv",
+      "retained_path": "results/teacher_review_v9_20261015/clap_bridge/summary_extended.csv",
+      "sha256": "785026b050e85752d2b79702e7f8eb6567f122520d682b8ecc6bb5ac2266c79d",
+      "bytes": 1942
+    },
+    {
+      "removed_path": "verification_outputs/clap/summary_extended.json",
+      "retained_path": "results/teacher_review_v9_20261015/clap_bridge/summary_extended.json",
+      "sha256": "6537b07dcc18322073f93b0af212a043181bb699d3c35bdfb9c35b12d6712abc",
+      "bytes": 4490
+    },
+    {
+      "removed_path": "verification_outputs/full_replay/clap/summary_extended.json",
+      "retained_path": "results/teacher_review_v9_20261015/clap_bridge/summary_extended.json",
+      "sha256": "6537b07dcc18322073f93b0af212a043181bb699d3c35bdfb9c35b12d6712abc",
+      "bytes": 4490
+    },
+    {
+      "removed_path": "verification_outputs/clap/recompute_audit.json",
+      "retained_path": "verification_outputs/full_replay/clap/recompute_audit.json",
+      "sha256": "2b938dba64442f7d7f8685abee365f54bd7520f5240d77faad461fc3c5fa18c8",
+      "bytes": 498
+    },
+    {
+      "removed_path": "verification_outputs/original/ablation_table.csv",
+      "retained_path": "verification_outputs/full_replay/original/ablation_table.csv",
+      "sha256": "81924c5baa7b4252c1d9a621148f15b18c510f7791615885dff1736821f8a900",
+      "bytes": 6509
+    },
+    {
+      "removed_path": "verification_outputs/original/all_summary_cells.csv",
+      "retained_path": "verification_outputs/full_replay/original/all_summary_cells.csv",
+      "sha256": "090799369bc0ffde2a53a304b78326a7db091aebfae53266a750b7274c08b62d",
+      "bytes": 16892
+    },
+    {
+      "removed_path": "verification_outputs/original/main_table.csv",
+      "retained_path": "verification_outputs/full_replay/original/main_table.csv",
+      "sha256": "a8ff7068877371dfccec4ed318f64963011ccee7575e15668f25b2aaeba8b754",
+      "bytes": 5771
+    },
+    {
+      "removed_path": "verification_outputs/original/paired_comparisons.csv",
+      "retained_path": "verification_outputs/full_replay/original/paired_comparisons.csv",
+      "sha256": "efc824cb66074824e00d59e07e3c3e7963edfd7f645a5c48d5793b771d4842b7",
+      "bytes": 25822
+    },
+    {
+      "removed_path": "verification_outputs/original/per_seed.csv",
+      "retained_path": "verification_outputs/full_replay/original/per_seed.csv",
+      "sha256": "5c9240230c1598f4cadbf48a55e0aab120b18ac95b2de15cb768e5dd5c40c86b",
+      "bytes": 99807
+    },
+    {
+      "removed_path": "verification_outputs/original/same_text_control.csv",
+      "retained_path": "verification_outputs/full_replay/original/same_text_control.csv",
+      "sha256": "5f2580cf0b205db31f5e3b82c7858d829d95a6952a3d343a9759dc4aa79bce6a",
+      "bytes": 2016
+    },
+    {
+      "removed_path": "verification_outputs/original/shared_text_control.csv",
+      "retained_path": "verification_outputs/full_replay/original/shared_text_control.csv",
+      "sha256": "f2199d5ed5832c142aa2a53586a55c55cc0cc770a5111b7de28cf8e5716ba6f9",
+      "bytes": 3070
+    },
+    {
+      "removed_path": "verification_outputs/original/statistics.json",
+      "retained_path": "verification_outputs/full_replay/original/statistics.json",
+      "sha256": "e976ed8f19c54d6ec32f77164ca81ae05b30cf21d7516b7ab51cbeb12a73ea77",
+      "bytes": 303857
+    },
+    {
+      "removed_path": "verification_outputs/original/verification.json",
+      "retained_path": "verification_outputs/full_replay/original/verification.json",
+      "sha256": "5aefa75b980db7c41e341edd125a83990fc37649b4484059eecbb099f06680e0",
+      "bytes": 70604
+    }
+  ]
+}

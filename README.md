@@ -1,10 +1,28 @@
 # Support-driven classwise semantic residual adaptation
 
-## v1.2.0 reproduction materials for manuscript v20
+## Reproduction materials for the final JVCIR manuscript
 
-Original v1.1.1 remains unchanged. This version adds missing original evidence
-and portable data access,
-without changing the manuscript's numerical results or creating an independent Test.
+Version **v1.2.1** (27 October 2026) is a maintenance update of v1.2.0 for
+the final manuscript v34. The scientific inputs, algorithms and numerical results
+are unchanged. It synchronizes the Figure 2 legend, improves navigation and
+citation metadata, and consolidates identical verification copies.
+
+The manuscript version and the materials version are different identifiers.
+Manuscript v34 cites the preserved v1.2.0 snapshot; a subsequent access-metadata
+update can cite v1.2.1 without changing the scientific text. Historical v1.1.1
+and v1.2.0 tags and assets remain available.
+
+Start with [the materials index](MATERIALS_INDEX.md), which maps tasks, inputs
+and output figures/tables. See [maintenance notes](MAINTENANCE_NOTES.md) for
+the exact changes and retained rights terms.
+
+### Quick start
+
+| Task | Required download | Entry point |
+|---|---|---|
+| Recalculate saved statistics | Source checkout or S1 | `replay_all.py` and `reproduce_paper_evidence.py` |
+| Redraw statistical figures | Source checkout or S1 | `draw_paper_figures.py` |
+| Refit the classwise residual | Source/S1 plus the unchanged S2 cache | `reproduce_cached_residual.py` |
 
 ### 1. Saved statistics and original supporting evidence
 
@@ -94,14 +112,18 @@ original algorithm; historical preparation receipts are evidence, not a new imag
 
 ### Release assets and tested environment
 
-Download both ZIPs from the [v1.2.0 release](https://github.com/curry30-kzk/wafer-semantic-residual-reproducibility/releases/tag/v1.2.0).
-Supplementary_Data_S1.zip is a complete source/evidence tree; extract it first.
-Reproduction_Caches_S2.zip overlays the 310 optional cache files on that tree.
+Download `Supplementary_Data_S1.zip` from the [v1.2.1 release](https://github.com/curry30-kzk/wafer-semantic-residual-reproducibility/releases/tag/v1.2.1).
+For cache-level fitting, use the unchanged [Reproduction_Caches_S2.zip from
+v1.2.0](https://github.com/curry30-kzk/wafer-semantic-residual-reproducibility/releases/download/v1.2.0/Reproduction_Caches_S2.zip).
+Extract S1 first, then overlay the 310 S2 files. The new release reuses this fixed
+cache asset rather than uploading the same 940 MB a second time.
+`SHA256SUMS.txt` lists the new S1 and unchanged S2 hashes.
 The cache archive alone is not executable. The Git checkout contains the source/
 evidence tree and the full release manifest but excludes these optional caches.
 No archive download is needed for saved-statistics recalculation.
 
-VALIDATION_SUMMARY.json records the checks actually executed and the new CPU
+VALIDATION_MAINTENANCE.json records the checks performed for v1.2.1.
+VALIDATION_SUMMARY.json retains the v1.2.0 checks and its CPU
 environment. requirements_tested_statistics.txt and
 requirements_tested_cache_figures.txt record tested package versions separately
 from the original broad installation requirements. They do not assert cross-platform

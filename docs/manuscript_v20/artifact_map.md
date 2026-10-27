@@ -1,7 +1,7 @@
-# Current v20 evidence and reproduction map
+# Evidence and reproduction map (historical v20 paths)
 
-This candidate adds archived evidence and portable operational entrypoints; no reported scientific result is changed.
-The English/Chinese v20 paper retains its necessary appendices. These files are data/code, not a replacement supplementary manuscript PDF.
+These scientific outputs are retained in manuscript v34. Material version v1.2.1 preserves the historical paths used by the portable entry points.
+The English/Chinese manuscript retains its necessary appendices. These files are data/code, not a replacement supplementary manuscript PDF.
 
 | Output | Evidence and actual entrypoint |
 |---|---|

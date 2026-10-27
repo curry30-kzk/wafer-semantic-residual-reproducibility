@@ -24,7 +24,7 @@ from scipy.stats import t
 HERE = Path(__file__).resolve().parent
 BLUE, ORANGE = ('#24658B', '#C47639')
 INK, GRAY, GRID = ('#263540', '#63717B', '#E5EAEE')
-METHODS = [('classwise_reliability', 'Classwise residual (ours)', BLUE, 'o', '-', 2.1), ('visual_anchor', 'Prescribed anchor', ORANGE, 's', '--', 1.5), ('proker', 'ProKeR (single prompt)', '#59676F', 'D', '-', 1.05), ('lp_plus_plus_fair', 'LP++', '#8F9BA3', '^', '--', 1.0), ('zs_lp', 'ZS-LP', '#A8B0B6', 'v', '-.', 1.0), ('clap', 'CLAP', '#778B99', 'P', ':', 1.05), ('rla', 'RLA', '#BAC0C5', 'X', '--', 1.0)]
+METHODS = [('classwise_reliability', 'Classwise residual (ours)', BLUE, 'o', '-', 2.1), ('visual_anchor', 'Visual anchor', ORANGE, 's', '--', 1.5), ('proker', 'ProKeR (single prompt)', '#59676F', 'D', '-', 1.05), ('lp_plus_plus_fair', 'LP++', '#8F9BA3', '^', '--', 1.0), ('zs_lp', 'ZS-LP', '#A8B0B6', 'v', '-.', 1.0), ('clap', 'CLAP', '#778B99', 'P', ':', 1.05), ('rla', 'RLA', '#BAC0C5', 'X', '--', 1.0)]
 SEEDS, SHOTS = (list(range(10)), (1, 5, 10))
 
 def sha256(path):
